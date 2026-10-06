@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { chromium, expect } from '@playwright/test';
+import { ROOT } from '../../blockchain/lib/files.mjs';
+import { runChild } from '../../blockchain/lib/test-node.mjs';
+import { simulationServer } from '../../blockchain/simulation-server.mjs';
+
+const directory = process.env.SOLAR_COMMUNITY_TEST_DIR;
+if (!directory) throw new Error('Set SOLAR_COMMUNITY_TEST_DIR to the completed community test directory');
+const report = JSON.parse(fs.readFileSync(path.join(directory, 'report.json'), 'utf8'));
+assert.equal(report.scenario, 'community'); assert.equal(report.passed, true);
+const server = simulationServer({ state: { status: 'completed', run_id: report.run_id, snapshot: report, checks: report.checks, events: [] }, running: false });
+let browser;
+try {
+  await runChild(process.execPath, ['node_modules/vite/bin/vite.js', 'build', '--config', 'dashboard/vite.config.mjs']);
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+  browser = await chromium.launch({ headless: true, ...(fs.existsSync(chrome) ? { executablePath: chrome } : {}), args: ['--no-sandbox'] });
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1100 }, locale: 'vi-VN' });
+  const errors = []; page.on('pageerror', e => errors.push(e.message));
+  await page.goto(`http://127.0.0.1:${server.address().port}/simulation`);
+  await expect(page.getByLabel('Kịch bản', { exact: true })).toHaveValue('community');
+  await expect(page.getByLabel('Phạm vi đánh giá')).toHaveValue('all');
+  await expect(page.locator('.sim-weather-events button')).toHaveCount(12);
+  await expect(page.getByRole('img', { name: 'Điện phát và phụ tải cộng đồng', exact: true })).toBeVisible();
+  const energy = page.getByRole('img', { name: 'Điện cam kết và đã giao', exact: true });
+  await expect(energy.locator('polyline')).toHaveCount(3);
+  assert.equal(new Set(await energy.locator('polyline').evaluateAll(lines => lines.map(line => line.getAttribute('stroke')))).size, 3);
+  const coordinates = (await energy.locator('polyline').first().getAttribute('points')).split(' ');
+  assert.equal(coordinates.length, 12);
+  assert.ok(new Set(coordinates.map(p => p.split(',')[1])).size >= 6);
+  await page.getByRole('button', { name: 'Chọn hộ biến động nhất', exact: true }).click();
+  await expect(page.getByRole('img', { name: /^Điểm uy tín ·/ }).locator('polyline')).toHaveCount(3);
+  await expect(page.getByLabel('Vùng xem chuỗi AI')).toHaveValue('detail');
+  await expect(page.getByRole('img', { name: 'Sai lệch dự báo điện phát theo thời gian', exact: true })).toBeVisible();
+  const diagnostic = page.getByRole('img', { name: 'Sai lệch dự báo điện phát theo thời gian', exact: true });
+  assert.equal((await diagnostic.locator('polyline').first().getAttribute('points')).split(' ').length, 12);
+  await page.getByLabel('Vùng xem chuỗi AI').selectOption('day');
+  assert.ok((await diagnostic.locator('polyline').first().getAttribute('points')).split(' ').length > 12);
+  await page.getByLabel('Vùng xem chuỗi AI').selectOption('detail');
+  const screenshots = path.join(ROOT, 'dashboard/test-results');
+  const evaluation = page.getByRole('region', { name: 'Đánh giá bằng biểu đồ' });
+  await evaluation.screenshot({ path: path.join(screenshots, 'community-evaluation.png') });
+  const event = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Tải PNG: Điện cam kết và đã giao', exact: true }).click();
+  const exported = await event;
+  await exported.saveAs(path.join(screenshots, 'community-energy.png'));
+  const raw = fs.readFileSync(await exported.path()); assert.equal(raw.subarray(1, 4).toString(), 'PNG');
+  await page.getByLabel('Phạm vi đánh giá').selectOption('4');
+  await page.getByLabel('Hộ trong giao dịch').selectOption('home_01');
+  const partialTrades = report.rounds[4].trades.filter(t => t.seller === 'home_01');
+  const delivered = partialTrades.reduce((n, t) => n + Number(t.delivered_wh), 0);
+  const committed = partialTrades.reduce((n, t) => n + Number(t.quantity_wh), 0);
+  assert.ok(delivered > 0 && delivered < committed);
+  await expect(page.locator('.sim-eval-kpis')).toContainText(
+    (100 * delivered / committed).toLocaleString('vi-VN', { maximumFractionDigits: 1 }) + '%');
+  await page.getByLabel('Phạm vi đánh giá').selectOption('all');
+  await page.getByLabel('Hộ trong giao dịch').selectOption('');
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+  await evaluation.screenshot({ path: path.join(screenshots, 'community-evaluation-mobile.png') });
+  assert.deepEqual(errors, []);
+  console.log('PASS community UI: whole-run trends, 12 events, 3 changing reputation traces, AI zoom/error diagnostics, partial delivery, PNG export and mobile.');
+} finally {
+  await browser?.close(); if (server.listening) await new Promise(resolve => server.close(resolve));
+}

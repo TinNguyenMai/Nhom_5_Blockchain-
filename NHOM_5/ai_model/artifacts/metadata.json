@@ -1,0 +1,59 @@
+{
+  "model_version": "home01-next5m-int8-0f22aaf7d1e0",
+  "model_sha256": "0f22aaf7d1e0996b6b614fe4021e175be2e3ead351aaf7e68180097397222195",
+  "dataset_sha256": "3447ab9c797392fc9ad7a580aeb0c7f828ec8b564d4efac97dc43d49872af388",
+  "household_id": "home_01",
+  "window": 12,
+  "interval_seconds": 300,
+  "feature_contract": "v1",
+  "n_features": 53,
+  "fields": [
+    "solar_power_kw",
+    "load_power_kw",
+    "irradiance_w_m2",
+    "cloud_cover"
+  ],
+  "output_kind": "residual_added_to_last_power",
+  "output_scale": [
+    0.06007320061326027,
+    0.06390251964330673
+  ],
+  "ops": [
+    "FULLY_CONNECTED"
+  ],
+  "input_quantization": [
+    0.007846041582524776,
+    -1
+  ],
+  "output_quantization": [
+    0.018964815884828568,
+    -18
+  ],
+  "training_config": {
+    "pv_kw": 4.0,
+    "base_load_kw": 0.65,
+    "pv_enabled": true,
+    "load_multiplier": 1.0,
+    "weather": "auto"
+  },
+  "split": {
+    "train": {
+      "samples": 5748,
+      "first_target": "2026-09-01T01:00:00+07:00",
+      "last_target": "2026-09-20T23:55:00+07:00"
+    },
+    "validation": {
+      "samples": 1440,
+      "first_target": "2026-09-21T00:00:00+07:00",
+      "last_target": "2026-09-25T23:55:00+07:00"
+    },
+    "test": {
+      "samples": 1440,
+      "first_target": "2026-09-26T00:00:00+07:00",
+      "last_target": "2026-09-30T23:55:00+07:00"
+    }
+  },
+  "tensorflow_version": "2.18.1",
+  "keras_version": "3.8.0",
+  "seed": 42
+}

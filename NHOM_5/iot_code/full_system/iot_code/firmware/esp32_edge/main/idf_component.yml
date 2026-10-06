@@ -1,0 +1,4 @@
+dependencies:
+  idf: ">=5.4.2,<5.6"
+  espressif/esp-tflite-micro: "==1.4.1"
+  espressif/ds18b20: "==0.2.0"

@@ -1,0 +1,3599 @@
+{
+  "model_version": "home01-next5m-int8-0f22aaf7d1e0",
+  "source_kind": "recorded_esp32_demo",
+  "run_id": "1ce2f12baab741a7bd4a7100ffcb459b",
+  "source_file": "data/edge_20260925_212015/scores.csv",
+  "source_sha256": "6205fd28797d6d8d634c0201b0c294b9c610a4f4bffc61dd3afc48fb6c96441f",
+  "notes": "Dự báo INT8 ghi nhận từ ESP32 trên telemetry mô phỏng; phiên demo đã lưu, không phải lượt thị trường hiện tại hoặc tập test 5 ngày.",
+  "interval_seconds": 300,
+  "points": [
+    {
+      "timestamp": "2026-10-01T11:00:00+07:00",
+      "solar": {
+        "actual": 2.2409,
+        "int8": 2.18713927268982,
+        "persistence": 2.186
+      },
+      "load": {
+        "actual": 0.6041,
+        "int8": 0.6503215432167053,
+        "persistence": 0.6685
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:05:00+07:00",
+      "solar": {
+        "actual": 2.283,
+        "int8": 2.243178606033325,
+        "persistence": 2.2409
+      },
+      "load": {
+        "actual": 0.6815,
+        "int8": 0.6477283835411072,
+        "persistence": 0.6041
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:10:00+07:00",
+      "solar": {
+        "actual": 2.2878,
+        "int8": 2.277303695678711,
+        "persistence": 2.283
+      },
+      "load": {
+        "actual": 0.696,
+        "int8": 0.666957199573517,
+        "persistence": 0.6815
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:15:00+07:00",
+      "solar": {
+        "actual": 2.2326,
+        "int8": 2.2786858081817627,
+        "persistence": 2.2878
+      },
+      "load": {
+        "actual": 0.627,
+        "int8": 0.6693381667137146,
+        "persistence": 0.696
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:20:00+07:00",
+      "solar": {
+        "actual": 2.2135,
+        "int8": 2.2269036769866943,
+        "persistence": 2.2326
+      },
+      "load": {
+        "actual": 0.6702,
+        "int8": 0.6560855507850647,
+        "persistence": 0.627
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:25:00+07:00",
+      "solar": {
+        "actual": 2.0676,
+        "int8": 2.2066643238067627,
+        "persistence": 2.2135
+      },
+      "load": {
+        "actual": 0.6802,
+        "int8": 0.656869113445282,
+        "persistence": 0.6702
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:30:00+07:00",
+      "solar": {
+        "actual": 2.0351,
+        "int8": 2.068739175796509,
+        "persistence": 2.0676
+      },
+      "load": {
+        "actual": 0.6641,
+        "int8": 0.675352394580841,
+        "persistence": 0.6802
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:35:00+07:00",
+      "solar": {
+        "actual": 2.1298,
+        "int8": 2.041935682296753,
+        "persistence": 2.0351
+      },
+      "load": {
+        "actual": 0.6137,
+        "int8": 0.672583281993866,
+        "persistence": 0.6641
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:40:00+07:00",
+      "solar": {
+        "actual": 2.271,
+        "int8": 2.1366357803344727,
+        "persistence": 2.1298
+      },
+      "load": {
+        "actual": 0.6275,
+        "int8": 0.654904544353485,
+        "persistence": 0.6137
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:45:00+07:00",
+      "solar": {
+        "actual": 2.2605,
+        "int8": 2.2641642093658447,
+        "persistence": 2.271
+      },
+      "load": {
+        "actual": 0.5987,
+        "int8": 0.652949869632721,
+        "persistence": 0.6275
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:50:00+07:00",
+      "solar": {
+        "actual": 2.0602,
+        "int8": 2.2479679584503174,
+        "persistence": 2.2605
+      },
+      "load": {
+        "actual": 0.6917,
+        "int8": 0.6374807953834534,
+        "persistence": 0.5987
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:55:00+07:00",
+      "solar": {
+        "actual": 1.9743,
+        "int8": 2.0510857105255127,
+        "persistence": 2.0602
+      },
+      "load": {
+        "actual": 0.6325,
+        "int8": 0.6662501096725464,
+        "persistence": 0.6917
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:00:00+07:00",
+      "solar": {
+        "actual": 2.1488,
+        "int8": 1.9754393100738525,
+        "persistence": 1.9743
+      },
+      "load": {
+        "actual": 0.6373,
+        "int8": 0.6591618061065674,
+        "persistence": 0.6325
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:05:00+07:00",
+      "solar": {
+        "actual": 2.1922,
+        "int8": 2.1419641971588135,
+        "persistence": 2.1488
+      },
+      "load": {
+        "actual": 0.6205,
+        "int8": 0.6421476006507874,
+        "persistence": 0.6373
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:10:00+07:00",
+      "solar": {
+        "actual": 2.0704,
+        "int8": 2.1819465160369873,
+        "persistence": 2.1922
+      },
+      "load": {
+        "actual": 0.6146,
+        "int8": 0.632619023323059,
+        "persistence": 0.6205
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:15:00+07:00",
+      "solar": {
+        "actual": 2.0549,
+        "int8": 2.062425136566162,
+        "persistence": 2.0704
+      },
+      "load": {
+        "actual": 0.6756,
+        "int8": 0.6473212838172913,
+        "persistence": 0.6146
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:20:00+07:00",
+      "solar": {
+        "actual": 1.9001,
+        "int8": 2.045785665512085,
+        "persistence": 2.0549
+      },
+      "load": {
+        "actual": 0.5999,
+        "int8": 0.668328583240509,
+        "persistence": 0.6756
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:25:00+07:00",
+      "solar": {
+        "actual": 1.8742,
+        "int8": 1.8989607095718384,
+        "persistence": 1.9001
+      },
+      "load": {
+        "actual": 0.6152,
+        "int8": 0.6386808156967163,
+        "persistence": 0.5999
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:30:00+07:00",
+      "solar": {
+        "actual": 1.8502,
+        "int8": 1.8741999864578247,
+        "persistence": 1.8742
+      },
+      "load": {
+        "actual": 0.6167,
+        "int8": 0.6430736780166626,
+        "persistence": 0.6152
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:35:00+07:00",
+      "solar": {
+        "actual": 1.801,
+        "int8": 1.8524786233901978,
+        "persistence": 1.8502
+      },
+      "load": {
+        "actual": 0.6591,
+        "int8": 0.6397261023521423,
+        "persistence": 0.6167
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:40:00+07:00",
+      "solar": {
+        "actual": 1.6155,
+        "int8": 1.8032785654067993,
+        "persistence": 1.801
+      },
+      "load": {
+        "actual": 0.6842,
+        "int8": 0.6554642915725708,
+        "persistence": 0.6591
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:45:00+07:00",
+      "solar": {
+        "actual": 1.6552,
+        "int8": 1.6234749555587769,
+        "persistence": 1.6155
+      },
+      "load": {
+        "actual": 0.6005,
+        "int8": 0.673292875289917,
+        "persistence": 0.6842
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:50:00+07:00",
+      "solar": {
+        "actual": 1.6292,
+        "int8": 1.6586178541183472,
+        "persistence": 1.6552
+      },
+      "load": {
+        "actual": 0.6398,
+        "int8": 0.6477640867233276,
+        "persistence": 0.6005
+      }
+    },
+    {
+      "timestamp": "2026-10-01T12:55:00+07:00",
+      "solar": {
+        "actual": 1.4299,
+        "int8": 1.6337571144104004,
+        "persistence": 1.6292
+      },
+      "load": {
+        "actual": 0.6637,
+        "int8": 0.6579784750938416,
+        "persistence": 0.6398
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:00:00+07:00",
+      "solar": {
+        "actual": 1.5147,
+        "int8": 1.4390143156051636,
+        "persistence": 1.4299
+      },
+      "load": {
+        "actual": 0.6867,
+        "int8": 0.6600642800331116,
+        "persistence": 0.6637
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:05:00+07:00",
+      "solar": {
+        "actual": 1.6855,
+        "int8": 1.5192571878433228,
+        "persistence": 1.5147
+      },
+      "load": {
+        "actual": 0.6494,
+        "int8": 0.6733691096305847,
+        "persistence": 0.6867
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:10:00+07:00",
+      "solar": {
+        "actual": 1.5998,
+        "int8": 1.68436074256897,
+        "persistence": 1.6855
+      },
+      "load": {
+        "actual": 0.6124,
+        "int8": 0.6603071093559265,
+        "persistence": 0.6494
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:15:00+07:00",
+      "solar": {
+        "actual": 1.5744,
+        "int8": 1.5929642915725708,
+        "persistence": 1.5998
+      },
+      "load": {
+        "actual": 0.646,
+        "int8": 0.6439093947410583,
+        "persistence": 0.6124
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:20:00+07:00",
+      "solar": {
+        "actual": 1.4628,
+        "int8": 1.5652856826782227,
+        "persistence": 1.5744
+      },
+      "load": {
+        "actual": 0.6177,
+        "int8": 0.6569071412086487,
+        "persistence": 0.646
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:25:00+07:00",
+      "solar": {
+        "actual": 1.5522,
+        "int8": 1.4639393091201782,
+        "persistence": 1.4628
+      },
+      "load": {
+        "actual": 0.6574,
+        "int8": 0.6564807891845703,
+        "persistence": 0.6177
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:30:00+07:00",
+      "solar": {
+        "actual": 1.5341,
+        "int8": 1.54992139339447,
+        "persistence": 1.5522
+      },
+      "load": {
+        "actual": 0.6241,
+        "int8": 0.6707308888435364,
+        "persistence": 0.6574
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:35:00+07:00",
+      "solar": {
+        "actual": 1.5016,
+        "int8": 1.5272643566131592,
+        "persistence": 1.5341
+      },
+      "load": {
+        "actual": 0.6372,
+        "int8": 0.6447023153305054,
+        "persistence": 0.6241
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:40:00+07:00",
+      "solar": {
+        "actual": 1.3674,
+        "int8": 1.4959036111831665,
+        "persistence": 1.5016
+      },
+      "load": {
+        "actual": 0.6623,
+        "int8": 0.6432594656944275,
+        "persistence": 0.6372
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:45:00+07:00",
+      "solar": {
+        "actual": 1.4531,
+        "int8": 1.3685393333435059,
+        "persistence": 1.3674
+      },
+      "load": {
+        "actual": 0.6021,
+        "int8": 0.6671475768089294,
+        "persistence": 0.6623
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:50:00+07:00",
+      "solar": {
+        "actual": 1.6575,
+        "int8": 1.448542833328247,
+        "persistence": 1.4531
+      },
+      "load": {
+        "actual": 0.6062,
+        "int8": 0.654211699962616,
+        "persistence": 0.6021
+      }
+    },
+    {
+      "timestamp": "2026-10-01T13:55:00+07:00",
+      "solar": {
+        "actual": 1.6192,
+        "int8": 1.63927161693573,
+        "persistence": 1.6575
+      },
+      "load": {
+        "actual": 0.6839,
+        "int8": 0.6401331424713135,
+        "persistence": 0.6062
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:00:00+07:00",
+      "solar": {
+        "actual": 1.5756,
+        "int8": 1.5952751636505127,
+        "persistence": 1.6192
+      },
+      "load": {
+        "actual": 0.6793,
+        "int8": 0.6511787176132202,
+        "persistence": 0.6839
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:05:00+07:00",
+      "solar": {
+        "actual": 1.6912,
+        "int8": 1.5505359172821045,
+        "persistence": 1.5756
+      },
+      "load": {
+        "actual": 0.6159,
+        "int8": 0.670816719532013,
+        "persistence": 0.6793
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:10:00+07:00",
+      "solar": {
+        "actual": 1.7897,
+        "int8": 1.663857340812683,
+        "persistence": 1.6912
+      },
+      "load": {
+        "actual": 0.7018,
+        "int8": 0.6534688472747803,
+        "persistence": 0.6159
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:15:00+07:00",
+      "solar": {
+        "actual": 1.6395,
+        "int8": 1.7486860752105713,
+        "persistence": 1.7897
+      },
+      "load": {
+        "actual": 0.7038,
+        "int8": 0.667866826057434,
+        "persistence": 0.7018
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:20:00+07:00",
+      "solar": {
+        "actual": 1.5642,
+        "int8": 1.6064609289169312,
+        "persistence": 1.6395
+      },
+      "load": {
+        "actual": 0.6716,
+        "int8": 0.6686549186706543,
+        "persistence": 0.7038
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:25:00+07:00",
+      "solar": {
+        "actual": 1.5891,
+        "int8": 1.5379966497421265,
+        "persistence": 1.5642
+      },
+      "load": {
+        "actual": 0.6548,
+        "int8": 0.670388102531433,
+        "persistence": 0.6716
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:30:00+07:00",
+      "solar": {
+        "actual": 1.6182,
+        "int8": 1.566314458847046,
+        "persistence": 1.5891
+      },
+      "load": {
+        "actual": 0.6407,
+        "int8": 0.66085946559906,
+        "persistence": 0.6548
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:35:00+07:00",
+      "solar": {
+        "actual": 1.5463,
+        "int8": 1.5863001346588135,
+        "persistence": 1.6182
+      },
+      "load": {
+        "actual": 0.68,
+        "int8": 0.6552428007125854,
+        "persistence": 0.6407
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:40:00+07:00",
+      "solar": {
+        "actual": 1.6138,
+        "int8": 1.5144002437591553,
+        "persistence": 1.5463
+      },
+      "load": {
+        "actual": 0.6261,
+        "int8": 0.6666691303253174,
+        "persistence": 0.68
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:45:00+07:00",
+      "solar": {
+        "actual": 1.7495,
+        "int8": 1.5830395221710205,
+        "persistence": 1.6138
+      },
+      "load": {
+        "actual": 0.6367,
+        "int8": 0.6503379940986633,
+        "persistence": 0.6261
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:50:00+07:00",
+      "solar": {
+        "actual": 1.7455,
+        "int8": 1.7039289474487305,
+        "persistence": 1.7495
+      },
+      "load": {
+        "actual": 0.6143,
+        "int8": 0.6573022603988647,
+        "persistence": 0.6367
+      }
+    },
+    {
+      "timestamp": "2026-10-01T14:55:00+07:00",
+      "solar": {
+        "actual": 1.7652,
+        "int8": 1.6908146142959595,
+        "persistence": 1.7455
+      },
+      "load": {
+        "actual": 0.688,
+        "int8": 0.6458094120025635,
+        "persistence": 0.6143
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:00:00+07:00",
+      "solar": {
+        "actual": 1.8396,
+        "int8": 1.7025398015975952,
+        "persistence": 1.7652
+      },
+      "load": {
+        "actual": 0.6838,
+        "int8": 0.6710334420204163,
+        "persistence": 0.688
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:05:00+07:00",
+      "solar": {
+        "actual": 1.7358,
+        "int8": 1.773521900177002,
+        "persistence": 1.8396
+      },
+      "load": {
+        "actual": 0.6843,
+        "int8": 0.664409577846527,
+        "persistence": 0.6838
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:10:00+07:00",
+      "solar": {
+        "actual": 1.705,
+        "int8": 1.666304111480713,
+        "persistence": 1.7358
+      },
+      "load": {
+        "actual": 0.6819,
+        "int8": 0.679452419281006,
+        "persistence": 0.6843
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:15:00+07:00",
+      "solar": {
+        "actual": 1.5783,
+        "int8": 1.6389219760894775,
+        "persistence": 1.705
+      },
+      "load": {
+        "actual": 0.6967,
+        "int8": 0.6964428424835205,
+        "persistence": 0.6819
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:20:00+07:00",
+      "solar": {
+        "actual": 1.3488,
+        "int8": 1.5213361978530884,
+        "persistence": 1.5783
+      },
+      "load": {
+        "actual": 0.7329,
+        "int8": 0.6954880952835083,
+        "persistence": 0.6967
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:25:00+07:00",
+      "solar": {
+        "actual": 1.4147,
+        "int8": 1.3112038373947144,
+        "persistence": 1.3488
+      },
+      "load": {
+        "actual": 0.7035,
+        "int8": 0.7062382102012634,
+        "persistence": 0.7329
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:30:00+07:00",
+      "solar": {
+        "actual": 1.4059,
+        "int8": 1.375964641571045,
+        "persistence": 1.4147
+      },
+      "load": {
+        "actual": 0.7228,
+        "int8": 0.710771381855011,
+        "persistence": 0.7035
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:35:00+07:00",
+      "solar": {
+        "actual": 1.3167,
+        "int8": 1.3614681959152222,
+        "persistence": 1.4059
+      },
+      "load": {
+        "actual": 0.6792,
+        "int8": 0.720376193523407,
+        "persistence": 0.7228
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:40:00+07:00",
+      "solar": {
+        "actual": 1.164,
+        "int8": 1.2756860256195068,
+        "persistence": 1.3167
+      },
+      "load": {
+        "actual": 0.7285,
+        "int8": 0.7119212746620178,
+        "persistence": 0.6792
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:45:00+07:00",
+      "solar": {
+        "actual": 1.1558,
+        "int8": 1.122986078262329,
+        "persistence": 1.164
+      },
+      "load": {
+        "actual": 0.7575,
+        "int8": 0.7478904128074646,
+        "persistence": 0.7285
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:50:00+07:00",
+      "solar": {
+        "actual": 1.1748,
+        "int8": 1.11820387840271,
+        "persistence": 1.1558
+      },
+      "load": {
+        "actual": 0.7599,
+        "int8": 0.7623475790023804,
+        "persistence": 0.7575
+      }
+    },
+    {
+      "timestamp": "2026-10-01T15:55:00+07:00",
+      "solar": {
+        "actual": 1.1434,
+        "int8": 1.1326467990875244,
+        "persistence": 1.1748
+      },
+      "load": {
+        "actual": 0.7576,
+        "int8": 0.7695951461791992,
+        "persistence": 0.7599
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:00:00+07:00",
+      "solar": {
+        "actual": 1.0816,
+        "int8": 1.0932717323303223,
+        "persistence": 1.1434
+      },
+      "load": {
+        "actual": 0.7092,
+        "int8": 0.7769904136657715,
+        "persistence": 0.7576
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:05:00+07:00",
+      "solar": {
+        "actual": 1.0195,
+        "int8": 1.034889578819275,
+        "persistence": 1.0816
+      },
+      "load": {
+        "actual": 0.7196,
+        "int8": 0.762523591518402,
+        "persistence": 0.7092
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:10:00+07:00",
+      "solar": {
+        "actual": 1.0779,
+        "int8": 0.975068211555481,
+        "persistence": 1.0195
+      },
+      "load": {
+        "actual": 0.8538,
+        "int8": 0.7886782884597778,
+        "persistence": 0.7196
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:15:00+07:00",
+      "solar": {
+        "actual": 1.0112,
+        "int8": 1.0243539810180664,
+        "persistence": 1.0779
+      },
+      "load": {
+        "actual": 0.8332,
+        "int8": 0.8392571806907654,
+        "persistence": 0.8538
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:20:00+07:00",
+      "solar": {
+        "actual": 0.9732,
+        "int8": 0.9576539397239685,
+        "persistence": 1.0112
+      },
+      "load": {
+        "actual": 0.8348,
+        "int8": 0.8222928643226624,
+        "persistence": 0.8332
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:25:00+07:00",
+      "solar": {
+        "actual": 0.862,
+        "int8": 0.9196540117263794,
+        "persistence": 0.9732
+      },
+      "load": {
+        "actual": 0.915,
+        "int8": 0.8505547046661377,
+        "persistence": 0.8348
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:30:00+07:00",
+      "solar": {
+        "actual": 0.8718,
+        "int8": 0.8084539771080017,
+        "persistence": 0.862
+      },
+      "load": {
+        "actual": 0.8729,
+        "int8": 0.891973912715912,
+        "persistence": 0.915
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:35:00+07:00",
+      "solar": {
+        "actual": 0.8452,
+        "int8": 0.8171147108078003,
+        "persistence": 0.8718
+      },
+      "load": {
+        "actual": 0.8476,
+        "int8": 0.9056212902069092,
+        "persistence": 0.8729
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:40:00+07:00",
+      "solar": {
+        "actual": 0.8095,
+        "int8": 0.7893754243850708,
+        "persistence": 0.8452
+      },
+      "load": {
+        "actual": 0.9574,
+        "int8": 0.9275853633880615,
+        "persistence": 0.8476
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:45:00+07:00",
+      "solar": {
+        "actual": 0.7537,
+        "int8": 0.752536118030548,
+        "persistence": 0.8095
+      },
+      "load": {
+        "actual": 0.9261,
+        "int8": 0.9670951962471008,
+        "persistence": 0.9574
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:50:00+07:00",
+      "solar": {
+        "actual": 0.6958,
+        "int8": 0.6967361569404602,
+        "persistence": 0.7537
+      },
+      "load": {
+        "actual": 0.9809,
+        "int8": 0.9794235825538635,
+        "persistence": 0.9261
+      }
+    },
+    {
+      "timestamp": "2026-10-01T16:55:00+07:00",
+      "solar": {
+        "actual": 0.6913,
+        "int8": 0.6365575790405273,
+        "persistence": 0.6958
+      },
+      "load": {
+        "actual": 1.0229,
+        "int8": 1.0027141571044922,
+        "persistence": 0.9809
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:00:00+07:00",
+      "solar": {
+        "actual": 0.657,
+        "int8": 0.6297789812088013,
+        "persistence": 0.6913
+      },
+      "load": {
+        "actual": 1.032,
+        "int8": 1.0556212663650513,
+        "persistence": 1.0229
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:05:00+07:00",
+      "solar": {
+        "actual": 0.5532,
+        "int8": 0.5943397879600525,
+        "persistence": 0.657
+      },
+      "load": {
+        "actual": 1.0749,
+        "int8": 1.095018744468689,
+        "persistence": 1.032
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:10:00+07:00",
+      "solar": {
+        "actual": 0.4941,
+        "int8": 0.49281832575798035,
+        "persistence": 0.5532
+      },
+      "load": {
+        "actual": 1.0435,
+        "int8": 1.112468957901001,
+        "persistence": 1.0749
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:15:00+07:00",
+      "solar": {
+        "actual": 0.428,
+        "int8": 0.43827542662620544,
+        "persistence": 0.4941
+      },
+      "load": {
+        "actual": 1.0788,
+        "int8": 1.1295448541641235,
+        "persistence": 1.0435
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:20:00+07:00",
+      "solar": {
+        "actual": 0.3877,
+        "int8": 0.368757575750351,
+        "persistence": 0.428
+      },
+      "load": {
+        "actual": 1.1056,
+        "int8": 1.1563615798950195,
+        "persistence": 1.0788
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:25:00+07:00",
+      "solar": {
+        "actual": 0.3385,
+        "int8": 0.334153950214386,
+        "persistence": 0.3877
+      },
+      "load": {
+        "actual": 1.1918,
+        "int8": 1.185585379600525,
+        "persistence": 1.1056
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:30:00+07:00",
+      "solar": {
+        "actual": 0.2673,
+        "int8": 0.28153613209724426,
+        "persistence": 0.3385
+      },
+      "load": {
+        "actual": 1.3053,
+        "int8": 1.2196736335754395,
+        "persistence": 1.1918
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:35:00+07:00",
+      "solar": {
+        "actual": 0.214,
+        "int8": 0.2171718180179596,
+        "persistence": 0.2673
+      },
+      "load": {
+        "actual": 1.195,
+        "int8": 1.2725787162780762,
+        "persistence": 1.3053
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:40:00+07:00",
+      "solar": {
+        "actual": 0.1574,
+        "int8": 0.16615036129951477,
+        "persistence": 0.214
+      },
+      "load": {
+        "actual": 1.4236,
+        "int8": 1.274985432624817,
+        "persistence": 1.195
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:45:00+07:00",
+      "solar": {
+        "actual": 0.1259,
+        "int8": 0.10613252222537994,
+        "persistence": 0.1574
+      },
+      "load": {
+        "actual": 1.2803,
+        "int8": 1.3375550508499146,
+        "persistence": 1.4236
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:50:00+07:00",
+      "solar": {
+        "actual": 0.0744,
+        "int8": 0.08032891154289246,
+        "persistence": 0.1259
+      },
+      "load": {
+        "actual": 1.3196,
+        "int8": 1.35664963722229,
+        "persistence": 1.2803
+      }
+    },
+    {
+      "timestamp": "2026-10-01T17:55:00+07:00",
+      "solar": {
+        "actual": 0.0243,
+        "int8": 0.03110746666789055,
+        "persistence": 0.0744
+      },
+      "load": {
+        "actual": 1.4083,
+        "int8": 1.4032210111618042,
+        "persistence": 1.3196
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0243
+      },
+      "load": {
+        "actual": 1.5136,
+        "int8": 1.4325380325317383,
+        "persistence": 1.4083
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.4158,
+        "int8": 1.486938238143921,
+        "persistence": 1.5136
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6007,
+        "int8": 1.53698992729187,
+        "persistence": 1.4158
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.4475,
+        "int8": 1.5558596849441528,
+        "persistence": 1.6007
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5493,
+        "int8": 1.5783851146698,
+        "persistence": 1.4475
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5468,
+        "int8": 1.597775936126709,
+        "persistence": 1.5493
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6234,
+        "int8": 1.5964878797531128,
+        "persistence": 1.5468
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.691,
+        "int8": 1.6379427909851074,
+        "persistence": 1.6234
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.7602,
+        "int8": 1.6316169500350952,
+        "persistence": 1.691
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6994,
+        "int8": 1.6656718254089355,
+        "persistence": 1.7602
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0011392772430554032,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.7421,
+        "int8": 1.669102430343628,
+        "persistence": 1.6994
+      }
+    },
+    {
+      "timestamp": "2026-10-01T18:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.003417831612750888,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6663,
+        "int8": 1.6863526105880737,
+        "persistence": 1.7421
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6991,
+        "int8": 1.6881142854690552,
+        "persistence": 1.6663
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6343,
+        "int8": 1.689404845237732,
+        "persistence": 1.6991
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.7109,
+        "int8": 1.6670212745666504,
+        "persistence": 1.6343
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6485,
+        "int8": 1.667271614074707,
+        "persistence": 1.7109
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6478,
+        "int8": 1.6569832563400269,
+        "persistence": 1.6485
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5437,
+        "int8": 1.6538594961166382,
+        "persistence": 1.6478
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.6942,
+        "int8": 1.6176258325576782,
+        "persistence": 1.5437
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5194,
+        "int8": 1.5839171409606934,
+        "persistence": 1.6942
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5606,
+        "int8": 1.5496975183486938,
+        "persistence": 1.5194
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5154,
+        "int8": 1.549692988395691,
+        "persistence": 1.5606
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.4241,
+        "int8": 1.4911620616912842,
+        "persistence": 1.5154
+      }
+    },
+    {
+      "timestamp": "2026-10-01T19:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.4456,
+        "int8": 1.4665164947509766,
+        "persistence": 1.4241
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.4316,
+        "int8": 1.4249976873397827,
+        "persistence": 1.4456
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.5125,
+        "int8": 1.3988786935806274,
+        "persistence": 1.4316
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.3107,
+        "int8": 1.3791911602020264,
+        "persistence": 1.5125
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.338,
+        "int8": 1.3155477046966553,
+        "persistence": 1.3107
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.2391,
+        "int8": 1.3089144229888916,
+        "persistence": 1.338
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.345,
+        "int8": 1.2609142065048218,
+        "persistence": 1.2391
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.2802,
+        "int8": 1.21169114112854,
+        "persistence": 1.345
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.1698,
+        "int8": 1.1735528707504272,
+        "persistence": 1.2802
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.149,
+        "int8": 1.1419264078140259,
+        "persistence": 1.1698
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.1696,
+        "int8": 1.12233829498291,
+        "persistence": 1.149
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.0344,
+        "int8": 1.0774956941604614,
+        "persistence": 1.1696
+      }
+    },
+    {
+      "timestamp": "2026-10-01T20:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.0253,
+        "int8": 1.0416713953018188,
+        "persistence": 1.0344
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.0182,
+        "int8": 1.0143929719924927,
+        "persistence": 1.0253
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9477,
+        "int8": 0.9697240591049194,
+        "persistence": 1.0182
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9186,
+        "int8": 0.940428614616394,
+        "persistence": 0.9477
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0022785544861108065,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9868,
+        "int8": 0.8931501507759094,
+        "persistence": 0.9186
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.005696385633200407,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9592,
+        "int8": 0.8728814721107483,
+        "persistence": 0.9868
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0022785544861108065,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8565,
+        "int8": 0.88769793510437,
+        "persistence": 0.9592
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8898,
+        "int8": 0.8625594973564148,
+        "persistence": 0.8565
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0022785544861108065,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8266,
+        "int8": 0.8401121497154236,
+        "persistence": 0.8898
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7764,
+        "int8": 0.822964310646057,
+        "persistence": 0.8266
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7609,
+        "int8": 0.8054856061935425,
+        "persistence": 0.7764
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8272,
+        "int8": 0.7851380109786987,
+        "persistence": 0.7609
+      }
+    },
+    {
+      "timestamp": "2026-10-01T21:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.773,
+        "int8": 0.7653931379318237,
+        "persistence": 0.8272
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7616,
+        "int8": 0.7523977160453796,
+        "persistence": 0.773
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.787,
+        "int8": 0.7252430319786072,
+        "persistence": 0.7616
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7509,
+        "int8": 0.744583547115326,
+        "persistence": 0.787
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.718,
+        "int8": 0.7351452708244324,
+        "persistence": 0.7509
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7422,
+        "int8": 0.7143642902374268,
+        "persistence": 0.718
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6476,
+        "int8": 0.7131144404411316,
+        "persistence": 0.7422
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6458,
+        "int8": 0.688804566860199,
+        "persistence": 0.6476
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6504,
+        "int8": 0.6833688616752625,
+        "persistence": 0.6458
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7082,
+        "int8": 0.6746379733085632,
+        "persistence": 0.6504
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6751,
+        "int8": 0.681538164615631,
+        "persistence": 0.7082
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6825,
+        "int8": 0.6714643239974976,
+        "persistence": 0.6751
+      }
+    },
+    {
+      "timestamp": "2026-10-01T22:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6849,
+        "int8": 0.6740167140960693,
+        "persistence": 0.6825
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6977,
+        "int8": 0.6606619954109192,
+        "persistence": 0.6849
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6163,
+        "int8": 0.6758858561515808,
+        "persistence": 0.6977
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6126,
+        "int8": 0.6441736817359924,
+        "persistence": 0.6163
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6686,
+        "int8": 0.6307784914970398,
+        "persistence": 0.6126
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6384,
+        "int8": 0.6358787417411804,
+        "persistence": 0.6686
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.619,
+        "int8": 0.6202215552330017,
+        "persistence": 0.6384
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6696,
+        "int8": 0.6238476037979126,
+        "persistence": 0.619
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6559,
+        "int8": 0.6259716153144836,
+        "persistence": 0.6696
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6842,
+        "int8": 0.63529771566391,
+        "persistence": 0.6559
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6701,
+        "int8": 0.645419180393219,
+        "persistence": 0.6842
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6799,
+        "int8": 0.6325311064720154,
+        "persistence": 0.6701
+      }
+    },
+    {
+      "timestamp": "2026-10-01T23:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6323,
+        "int8": 0.649602472782135,
+        "persistence": 0.6799
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6043,
+        "int8": 0.6456308960914612,
+        "persistence": 0.6323
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.5998,
+        "int8": 0.616419017314911,
+        "persistence": 0.6043
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6627,
+        "int8": 0.6264618039131165,
+        "persistence": 0.5998
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6291,
+        "int8": 0.6433095932006836,
+        "persistence": 0.6627
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.616,
+        "int8": 0.6266762018203735,
+        "persistence": 0.6291
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6649,
+        "int8": 0.6256951689720154,
+        "persistence": 0.616
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.702,
+        "int8": 0.651569128036499,
+        "persistence": 0.6649
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0011392772430554032,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6615,
+        "int8": 0.6559478640556335,
+        "persistence": 0.702
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6514,
+        "int8": 0.6421095728874207,
+        "persistence": 0.6615
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6543,
+        "int8": 0.63564532995224,
+        "persistence": 0.6514
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.671,
+        "int8": 0.645816683769226,
+        "persistence": 0.6543
+      }
+    },
+    {
+      "timestamp": "2026-10-02T00:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0011392772430554032,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6261,
+        "int8": 0.647973895072937,
+        "persistence": 0.671
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0011392772430554032,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6112,
+        "int8": 0.633371412754059,
+        "persistence": 0.6261
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6269,
+        "int8": 0.624530851840973,
+        "persistence": 0.6112
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6621,
+        "int8": 0.625688135623932,
+        "persistence": 0.6269
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6289,
+        "int8": 0.6475571990013123,
+        "persistence": 0.6621
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0011392772430554032,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.5996,
+        "int8": 0.638595163822174,
+        "persistence": 0.6289
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6764,
+        "int8": 0.6238380074501038,
+        "persistence": 0.5996
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6397,
+        "int8": 0.65216201543808,
+        "persistence": 0.6764
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6375,
+        "int8": 0.6384881138801575,
+        "persistence": 0.6397
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6388,
+        "int8": 0.630228579044342,
+        "persistence": 0.6375
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6274,
+        "int8": 0.631528615951538,
+        "persistence": 0.6388
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6018,
+        "int8": 0.632247567176819,
+        "persistence": 0.6274
+      }
+    },
+    {
+      "timestamp": "2026-10-02T01:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6841,
+        "int8": 0.6211904287338257,
+        "persistence": 0.6018
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6699,
+        "int8": 0.6368358731269836,
+        "persistence": 0.6841
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6235,
+        "int8": 0.632331132888794,
+        "persistence": 0.6699
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6856,
+        "int8": 0.6283475756645203,
+        "persistence": 0.6235
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6533,
+        "int8": 0.6492429971694946,
+        "persistence": 0.6856
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6677,
+        "int8": 0.6387571692466736,
+        "persistence": 0.6533
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6759,
+        "int8": 0.6434620022773743,
+        "persistence": 0.6677
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6859,
+        "int8": 0.6480262875556946,
+        "persistence": 0.6759
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6707,
+        "int8": 0.6580262780189514,
+        "persistence": 0.6859
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6718,
+        "int8": 0.6500977277755737,
+        "persistence": 0.6707
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6847,
+        "int8": 0.6596810221672058,
+        "persistence": 0.6718
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6324,
+        "int8": 0.654402494430542,
+        "persistence": 0.6847
+      }
+    },
+    {
+      "timestamp": "2026-10-02T02:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6547,
+        "int8": 0.6542141437530518,
+        "persistence": 0.6324
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6504,
+        "int8": 0.6583356857299805,
+        "persistence": 0.6547
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6398,
+        "int8": 0.6552475690841675,
+        "persistence": 0.6504
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6137,
+        "int8": 0.6458594799041748,
+        "persistence": 0.6398
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.658,
+        "int8": 0.648845076560974,
+        "persistence": 0.6137
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6637,
+        "int8": 0.6495167016983032,
+        "persistence": 0.658
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6183,
+        "int8": 0.6600642800331116,
+        "persistence": 0.6637
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6422,
+        "int8": 0.6522331833839417,
+        "persistence": 0.6183
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7003,
+        "int8": 0.6506832838058472,
+        "persistence": 0.6422
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.612,
+        "int8": 0.661519169807434,
+        "persistence": 0.7003
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6999,
+        "int8": 0.651992678642273,
+        "persistence": 0.612
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6753,
+        "int8": 0.6599072813987732,
+        "persistence": 0.6999
+      }
+    },
+    {
+      "timestamp": "2026-10-02T03:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6179,
+        "int8": 0.6595453023910522,
+        "persistence": 0.6753
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7014,
+        "int8": 0.6700116991996765,
+        "persistence": 0.6179
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7139,
+        "int8": 0.669890582561493,
+        "persistence": 0.7014
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.702,
+        "int8": 0.6811787486076355,
+        "persistence": 0.7139
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6718,
+        "int8": 0.6898810267448425,
+        "persistence": 0.702
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6791,
+        "int8": 0.6718000173568726,
+        "persistence": 0.6718
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6354,
+        "int8": 0.6839475631713867,
+        "persistence": 0.6791
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7184,
+        "int8": 0.6814521551132202,
+        "persistence": 0.6354
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7166,
+        "int8": 0.6929501295089722,
+        "persistence": 0.7184
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7092,
+        "int8": 0.688726305961609,
+        "persistence": 0.7166
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7275,
+        "int8": 0.7164714336395264,
+        "persistence": 0.7092
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7082,
+        "int8": 0.7165929079055786,
+        "persistence": 0.7275
+      }
+    },
+    {
+      "timestamp": "2026-10-02T04:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.6872,
+        "int8": 0.7409212589263916,
+        "persistence": 0.7082
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:00:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.7124,
+        "int8": 0.7356759905815125,
+        "persistence": 0.6872
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:05:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.0,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.832,
+        "int8": 0.754816472530365,
+        "persistence": 0.7124
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:10:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.003417831612750888,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8299,
+        "int8": 0.7762526273727417,
+        "persistence": 0.832
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:15:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.005696385633200407,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.834,
+        "int8": 0.794754922389984,
+        "persistence": 0.8299
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:20:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.004557108972221613,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8872,
+        "int8": 0.832788109779358,
+        "persistence": 0.834
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:25:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.007974940352141857,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8939,
+        "int8": 0.8508430123329163,
+        "persistence": 0.8872
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:30:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.007974940352141857,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8751,
+        "int8": 0.8769333958625793,
+        "persistence": 0.8939
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:35:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.005696385633200407,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9253,
+        "int8": 0.902973711490631,
+        "persistence": 0.8751
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:40:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.007974940352141857,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8985,
+        "int8": 0.9398428201675415,
+        "persistence": 0.9253
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:45:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.009114217944443226,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.8823,
+        "int8": 0.978485405445099,
+        "persistence": 0.8985
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:50:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.011392771266400814,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 0.9457,
+        "int8": 0.9974305033683777,
+        "persistence": 0.8823
+      }
+    },
+    {
+      "timestamp": "2026-10-02T05:55:00+07:00",
+      "solar": {
+        "actual": 0.0,
+        "int8": 0.013671326451003551,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.0199,
+        "int8": 1.011142611503601,
+        "persistence": 0.9457
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:00:00+07:00",
+      "solar": {
+        "actual": 0.0246,
+        "int8": 0.01936771348118782,
+        "persistence": 0.0
+      },
+      "load": {
+        "actual": 1.0827,
+        "int8": 1.0235356092453,
+        "persistence": 1.0199
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:05:00+07:00",
+      "solar": {
+        "actual": 0.0716,
+        "int8": 0.0473855435848236,
+        "persistence": 0.024599999999999997
+      },
+      "load": {
+        "actual": 0.9857,
+        "int8": 1.048766851425171,
+        "persistence": 1.0827
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:10:00+07:00",
+      "solar": {
+        "actual": 0.1211,
+        "int8": 0.0955248177051544,
+        "persistence": 0.0716
+      },
+      "load": {
+        "actual": 1.1169,
+        "int8": 1.0911352634429932,
+        "persistence": 0.9857
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:15:00+07:00",
+      "solar": {
+        "actual": 0.1738,
+        "int8": 0.1507212072610855,
+        "persistence": 0.1211
+      },
+      "load": {
+        "actual": 1.1424,
+        "int8": 1.1047810316085815,
+        "persistence": 1.1169
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:20:00+07:00",
+      "solar": {
+        "actual": 0.2209,
+        "int8": 0.20456048846244812,
+        "persistence": 0.1738
+      },
+      "load": {
+        "actual": 1.1086,
+        "int8": 1.1133143901824951,
+        "persistence": 1.1424
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:25:00+07:00",
+      "solar": {
+        "actual": 0.259,
+        "int8": 0.2562175989151001,
+        "persistence": 0.2209
+      },
+      "load": {
+        "actual": 1.2558,
+        "int8": 1.1279903650283813,
+        "persistence": 1.1086
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:30:00+07:00",
+      "solar": {
+        "actual": 0.3072,
+        "int8": 0.3011532723903656,
+        "persistence": 0.259
+      },
+      "load": {
+        "actual": 1.139,
+        "int8": 1.1515766382217407,
+        "persistence": 1.2558
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:35:00+07:00",
+      "solar": {
+        "actual": 0.3753,
+        "int8": 0.350492537021637,
+        "persistence": 0.3072
+      },
+      "load": {
+        "actual": 1.1967,
+        "int8": 1.1838403940200806,
+        "persistence": 1.139
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:40:00+07:00",
+      "solar": {
+        "actual": 0.3989,
+        "int8": 0.41745325922966,
+        "persistence": 0.3753
+      },
+      "load": {
+        "actual": 1.1216,
+        "int8": 1.2185142040252686,
+        "persistence": 1.1967
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:45:00+07:00",
+      "solar": {
+        "actual": 0.4192,
+        "int8": 0.4433318078517914,
+        "persistence": 0.3989
+      },
+      "load": {
+        "actual": 1.1391,
+        "int8": 1.2452137470245361,
+        "persistence": 1.1216
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:50:00+07:00",
+      "solar": {
+        "actual": 0.5056,
+        "int8": 0.46249252557754517,
+        "persistence": 0.4192
+      },
+      "load": {
+        "actual": 1.2189,
+        "int8": 1.2202972173690796,
+        "persistence": 1.1391
+      }
+    },
+    {
+      "timestamp": "2026-10-02T06:55:00+07:00",
+      "solar": {
+        "actual": 0.5454,
+        "int8": 0.5477532148361206,
+        "persistence": 0.5056
+      },
+      "load": {
+        "actual": 1.2031,
+        "int8": 1.2104166746139526,
+        "persistence": 1.2189
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:00:00+07:00",
+      "solar": {
+        "actual": 0.5829,
+        "int8": 0.5875532627105713,
+        "persistence": 0.5454
+      },
+      "load": {
+        "actual": 1.2399,
+        "int8": 1.2176427841186523,
+        "persistence": 1.2031
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:05:00+07:00",
+      "solar": {
+        "actual": 0.6469,
+        "int8": 0.628471076488495,
+        "persistence": 0.5829
+      },
+      "load": {
+        "actual": 1.1381,
+        "int8": 1.2071787118911743,
+        "persistence": 1.2399
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:10:00+07:00",
+      "solar": {
+        "actual": 0.6946,
+        "int8": 0.689053237438202,
+        "persistence": 0.6469
+      },
+      "load": {
+        "actual": 1.3009,
+        "int8": 1.1962711811065674,
+        "persistence": 1.1381
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:15:00+07:00",
+      "solar": {
+        "actual": 0.7237,
+        "int8": 0.7356139421463013,
+        "persistence": 0.6946
+      },
+      "load": {
+        "actual": 1.1406,
+        "int8": 1.179710030555725,
+        "persistence": 1.3009
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:20:00+07:00",
+      "solar": {
+        "actual": 0.7546,
+        "int8": 0.7681317925453186,
+        "persistence": 0.7237
+      },
+      "load": {
+        "actual": 1.1447,
+        "int8": 1.1721093654632568,
+        "persistence": 1.1406
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:25:00+07:00",
+      "solar": {
+        "actual": 0.8663,
+        "int8": 0.795613944530487,
+        "persistence": 0.7546
+      },
+      "load": {
+        "actual": 1.2369,
+        "int8": 1.1580309867858887,
+        "persistence": 1.1447
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:30:00+07:00",
+      "solar": {
+        "actual": 0.8788,
+        "int8": 0.905035436153412,
+        "persistence": 0.8663
+      },
+      "load": {
+        "actual": 1.1357,
+        "int8": 1.1363123655319214,
+        "persistence": 1.2369
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:35:00+07:00",
+      "solar": {
+        "actual": 0.8669,
+        "int8": 0.918674647808075,
+        "persistence": 0.8788
+      },
+      "load": {
+        "actual": 1.0795,
+        "int8": 1.1308523416519165,
+        "persistence": 1.1357
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:40:00+07:00",
+      "solar": {
+        "actual": 0.8689,
+        "int8": 0.9079139828681946,
+        "persistence": 0.8669
+      },
+      "load": {
+        "actual": 1.0872,
+        "int8": 1.0928308963775635,
+        "persistence": 1.0795
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:45:00+07:00",
+      "solar": {
+        "actual": 0.9088,
+        "int8": 0.9087746739387512,
+        "persistence": 0.8689
+      },
+      "load": {
+        "actual": 1.1108,
+        "int8": 1.07871675491333,
+        "persistence": 1.0872
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:50:00+07:00",
+      "solar": {
+        "actual": 1.0327,
+        "int8": 0.9441176056861877,
+        "persistence": 0.9088
+      },
+      "load": {
+        "actual": 0.9897,
+        "int8": 1.040509819984436,
+        "persistence": 1.1108
+      }
+    },
+    {
+      "timestamp": "2026-10-02T07:55:00+07:00",
+      "solar": {
+        "actual": 1.043,
+        "int8": 1.0668781995773315,
+        "persistence": 1.0327
+      },
+      "load": {
+        "actual": 1.0571,
+        "int8": 1.0212093591690063,
+        "persistence": 0.9897
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:00:00+07:00",
+      "solar": {
+        "actual": 1.0972,
+        "int8": 1.0748997926712036,
+        "persistence": 1.043
+      },
+      "load": {
+        "actual": 0.9361,
+        "int8": 0.996505081653595,
+        "persistence": 1.0571
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:05:00+07:00",
+      "solar": {
+        "actual": 1.1981,
+        "int8": 1.1268212795257568,
+        "persistence": 1.0972
+      },
+      "load": {
+        "actual": 0.9393,
+        "int8": 0.9409475922584534,
+        "persistence": 0.9361
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:10:00+07:00",
+      "solar": {
+        "actual": 1.1975,
+        "int8": 1.2231640815734863,
+        "persistence": 1.1981
+      },
+      "load": {
+        "actual": 0.9485,
+        "int8": 0.9235453009605408,
+        "persistence": 0.9393
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:15:00+07:00",
+      "solar": {
+        "actual": 1.2169,
+        "int8": 1.2259819507598877,
+        "persistence": 1.1975
+      },
+      "load": {
+        "actual": 0.9982,
+        "int8": 0.916990578174591,
+        "persistence": 0.9485
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:20:00+07:00",
+      "solar": {
+        "actual": 1.2149,
+        "int8": 1.247660517692566,
+        "persistence": 1.2169
+      },
+      "load": {
+        "actual": 0.9704,
+        "int8": 0.880645751953125,
+        "persistence": 0.9982
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:25:00+07:00",
+      "solar": {
+        "actual": 1.2681,
+        "int8": 1.2467998266220093,
+        "persistence": 1.2149
+      },
+      "load": {
+        "actual": 0.8937,
+        "int8": 0.857693314552307,
+        "persistence": 0.9704
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:30:00+07:00",
+      "solar": {
+        "actual": 1.355,
+        "int8": 1.3034175634384155,
+        "persistence": 1.2681
+      },
+      "load": {
+        "actual": 0.8486,
+        "int8": 0.8585548996925354,
+        "persistence": 0.8937
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:35:00+07:00",
+      "solar": {
+        "actual": 1.4967,
+        "int8": 1.3891782760620117,
+        "persistence": 1.355
+      },
+      "load": {
+        "actual": 0.8017,
+        "int8": 0.8389047980308533,
+        "persistence": 0.8486
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:40:00+07:00",
+      "solar": {
+        "actual": 1.4883,
+        "int8": 1.5251820087432861,
+        "persistence": 1.4967
+      },
+      "load": {
+        "actual": 0.8728,
+        "int8": 0.8210904002189636,
+        "persistence": 0.8017
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:45:00+07:00",
+      "solar": {
+        "actual": 1.5665,
+        "int8": 1.519060492515564,
+        "persistence": 1.4883
+      },
+      "load": {
+        "actual": 0.8018,
+        "int8": 0.7867551445961,
+        "persistence": 0.8728
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:50:00+07:00",
+      "solar": {
+        "actual": 1.5964,
+        "int8": 1.5972604751586914,
+        "persistence": 1.5665
+      },
+      "load": {
+        "actual": 0.8255,
+        "int8": 0.781197726726532,
+        "persistence": 0.8018
+      }
+    },
+    {
+      "timestamp": "2026-10-02T08:55:00+07:00",
+      "solar": {
+        "actual": 1.6692,
+        "int8": 1.6248819828033447,
+        "persistence": 1.5964
+      },
+      "load": {
+        "actual": 0.6988,
+        "int8": 0.7612693309783936,
+        "persistence": 0.8255
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:00:00+07:00",
+      "solar": {
+        "actual": 1.5532,
+        "int8": 1.6988211870193481,
+        "persistence": 1.6692
+      },
+      "load": {
+        "actual": 0.7368,
+        "int8": 0.741216480731964,
+        "persistence": 0.6988
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:05:00+07:00",
+      "solar": {
+        "actual": 1.6241,
+        "int8": 1.5862390995025635,
+        "persistence": 1.5532
+      },
+      "load": {
+        "actual": 0.6732,
+        "int8": 0.7331643104553223,
+        "persistence": 0.7368
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:10:00+07:00",
+      "solar": {
+        "actual": 1.5912,
+        "int8": 1.658278226852417,
+        "persistence": 1.6241
+      },
+      "load": {
+        "actual": 0.7078,
+        "int8": 0.7022855877876282,
+        "persistence": 0.6732
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:15:00+07:00",
+      "solar": {
+        "actual": 1.6671,
+        "int8": 1.6242390871047974,
+        "persistence": 1.5912
+      },
+      "load": {
+        "actual": 0.7422,
+        "int8": 0.7005285620689392,
+        "persistence": 0.7078
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:20:00+07:00",
+      "solar": {
+        "actual": 1.7454,
+        "int8": 1.6989997625350952,
+        "persistence": 1.6671
+      },
+      "load": {
+        "actual": 0.7092,
+        "int8": 0.6925121545791626,
+        "persistence": 0.7422
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:25:00+07:00",
+      "solar": {
+        "actual": 1.6282,
+        "int8": 1.7772997617721558,
+        "persistence": 1.7454
+      },
+      "load": {
+        "actual": 0.6922,
+        "int8": 0.687385857105255,
+        "persistence": 0.7092
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:30:00+07:00",
+      "solar": {
+        "actual": 1.6045,
+        "int8": 1.6612391471862793,
+        "persistence": 1.6282
+      },
+      "load": {
+        "actual": 0.7331,
+        "int8": 0.677657186985016,
+        "persistence": 0.6922
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:35:00+07:00",
+      "solar": {
+        "actual": 1.5425,
+        "int8": 1.6375391483306885,
+        "persistence": 1.6045
+      },
+      "load": {
+        "actual": 0.6744,
+        "int8": 0.6894716024398804,
+        "persistence": 0.7331
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:40:00+07:00",
+      "solar": {
+        "actual": 1.6512,
+        "int8": 1.5778175592422485,
+        "persistence": 1.5425
+      },
+      "load": {
+        "actual": 0.6671,
+        "int8": 0.6707642674446106,
+        "persistence": 0.6744
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:45:00+07:00",
+      "solar": {
+        "actual": 1.7023,
+        "int8": 1.686517596244812,
+        "persistence": 1.6512
+      },
+      "load": {
+        "actual": 0.6983,
+        "int8": 0.668311893939972,
+        "persistence": 0.6671
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:50:00+07:00",
+      "solar": {
+        "actual": 1.6699,
+        "int8": 1.7341997623443604,
+        "persistence": 1.7023
+      },
+      "load": {
+        "actual": 0.6671,
+        "int8": 0.6655787229537964,
+        "persistence": 0.6983
+      }
+    },
+    {
+      "timestamp": "2026-10-02T09:55:00+07:00",
+      "solar": {
+        "actual": 1.6767,
+        "int8": 1.7029390335083008,
+        "persistence": 1.6699
+      },
+      "load": {
+        "actual": 0.6923,
+        "int8": 0.6574048399925232,
+        "persistence": 0.6671
+      }
+    }
+  ]
+}

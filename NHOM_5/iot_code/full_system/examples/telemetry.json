@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "event_id": "example:home_01:0",
+  "run_id": "example",
+  "household_id": "home_01",
+  "timestamp": "2026-09-01T12:00:00+07:00",
+  "published_at": "2026-09-21T12:24:46.136224+00:00",
+  "interval_seconds": 300,
+  "irradiance_w_m2": 774.09,
+  "temperature_c": 32.39,
+  "cloud_cover": 0.3012,
+  "solar_power_kw": 2.6319,
+  "load_power_kw": 0.6212,
+  "net_power_kw": 2.0107,
+  "solar_energy_kwh": 0.219325,
+  "load_energy_kwh": 0.051767,
+  "surplus_energy_kwh": 0.167558,
+  "deficit_energy_kwh": 0
+}

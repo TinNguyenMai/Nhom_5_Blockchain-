@@ -1,0 +1,919 @@
+{
+  "schema_version": 1,
+  "purpose": "lecturer_submission",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 829,
+      "sha256": "0b0257c6110f51690b53d8969fc65db9f5e271f5eab906ffd3a6ca1ef38c7e1d"
+    },
+    {
+      "path": "ai_model/__init__.py",
+      "bytes": 85,
+      "sha256": "3b2eddb9e870fd2fe9723c37d01fd89976b328daf1a8ee4153d83aa4014d7908"
+    },
+    {
+      "path": "ai_model/artifacts/evaluation.json",
+      "bytes": 2546,
+      "sha256": "861afb999785250a0c2fa985a833485c52c2aa9a0f77dfa410b88f3b554ebd3e"
+    },
+    {
+      "path": "ai_model/artifacts/metadata.json",
+      "bytes": 1422,
+      "sha256": "eb994033b8185b78c9b29ccf58372b41f7924271b1932e3c5e444ecb4c87f411"
+    },
+    {
+      "path": "ai_model/artifacts/metrics.json",
+      "bytes": 1762,
+      "sha256": "e8bbe236e8716044ed96b1a8638e287dc087956b5fd0d5a4db4606276f8f6488"
+    },
+    {
+      "path": "ai_model/artifacts/model.keras",
+      "bytes": 55215,
+      "sha256": "164a7cddeb66a0ecd3ad11d6b239c0f593dbdfc7349200b52365a969acf6b175"
+    },
+    {
+      "path": "ai_model/artifacts/model_fp32.tflite",
+      "bytes": 11084,
+      "sha256": "c6da6ec38c2a6870f82d87ade54572b0eba55d757c32a6abc0eb80edae30361b"
+    },
+    {
+      "path": "ai_model/artifacts/model_int8.tflite",
+      "bytes": 5832,
+      "sha256": "0f22aaf7d1e0996b6b614fe4021e175be2e3ead351aaf7e68180097397222195"
+    },
+    {
+      "path": "ai_model/artifacts/selftest.json",
+      "bytes": 1785,
+      "sha256": "e63e5471970eecb69f4ab113572f4cf4c67de1b6c4fb41d0e5cf393aded390e9"
+    },
+    {
+      "path": "ai_model/artifacts/visualization.json",
+      "bytes": 82662,
+      "sha256": "3b69cc06a0d6005f0156bbdc5ae01a288f8fbf4b4f6bc4a2c06b634cbef2753b"
+    },
+    {
+      "path": "ai_model/evaluate.py",
+      "bytes": 2623,
+      "sha256": "dcd1db7b885dc564a7ffc7f95043013f1aaf3af31a414a00ba76193581be869b"
+    },
+    {
+      "path": "ai_model/export_visualization.py",
+      "bytes": 2260,
+      "sha256": "cd95b38497b2ffdbe030c164055488cc718f4fe749a987b4fec4e77ef54f47ed"
+    },
+    {
+      "path": "ai_model/features.py",
+      "bytes": 4112,
+      "sha256": "12cbb7bb037e4eb76807249b2448dd393df1b747db52557f46a63b147ad5a71c"
+    },
+    {
+      "path": "ai_model/pc_reference.py",
+      "bytes": 2839,
+      "sha256": "678b7c61aea847487bf2ce4bdc66967294857cffe99dff1db6b7dcfa8d328d2b"
+    },
+    {
+      "path": "ai_model/predictor.py",
+      "bytes": 2509,
+      "sha256": "133437c6bf80dc2f8b010e8e1e7c48c52aedea07179ae016618b962270eb5bdc"
+    },
+    {
+      "path": "ai_model/requirements.txt",
+      "bytes": 122,
+      "sha256": "d5933992bd38ec142ca4e5ce3689a0c5e9628ebf3ffa83e9611ca85348f7bee5"
+    },
+    {
+      "path": "ai_model/train.py",
+      "bytes": 10102,
+      "sha256": "aa01d4b7413886b02b635d33932506dbb1fdb5fba8510d4d780280b6ddb11d6e"
+    },
+    {
+      "path": "backend/__init__.py",
+      "bytes": 104,
+      "sha256": "97533c39f69376db17ec0c4133284b89e5d0196d7b8a1a6517a3ab77b37ab996"
+    },
+    {
+      "path": "backend/__main__.py",
+      "bytes": 2066,
+      "sha256": "a0cddda89f3aac13c729e95e2f6e42642b7d686bf36c8a9de62f3dd08d573635"
+    },
+    {
+      "path": "backend/api.py",
+      "bytes": 5011,
+      "sha256": "7615d73af30ca69edd28266ba79de344491789248fb645a444c8b45639c8c828"
+    },
+    {
+      "path": "backend/chain.py",
+      "bytes": 7438,
+      "sha256": "0f9389be1afff46fa977d3528b59a1409aa6873ab0382c1dd71f2ebd4f9003e3"
+    },
+    {
+      "path": "backend/market_storage.py",
+      "bytes": 2763,
+      "sha256": "9f7434c1c56002aa1adadf30c3f7685d8869ca0784c0ce999f1d87bc8b40b4a2"
+    },
+    {
+      "path": "backend/market_validation.py",
+      "bytes": 2649,
+      "sha256": "7a7382e882999503af2a4615c3a611e2c8c7d0a581b6ee8219635851434281b1"
+    },
+    {
+      "path": "backend/policy.py",
+      "bytes": 961,
+      "sha256": "55a3b17a8ed87cfcac5768ea27c8fb83235b9a52f4a7369dfe8cbc2f7de524de"
+    },
+    {
+      "path": "backend/requirements-test.txt",
+      "bytes": 66,
+      "sha256": "fec85fe3e9aa9ebb21c05f2489bec972702b7cb43dd9fe6753dd6f6e811dcd38"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 53,
+      "sha256": "7337a87dd6767fe2e3d94f951dd9147f1063efa0d159e909fb9c7ea5c8658c11"
+    },
+    {
+      "path": "backend/service.py",
+      "bytes": 6865,
+      "sha256": "e089092f1af8f3101802765ab2a816554e787880221f95e877ab8bc6afe7febf"
+    },
+    {
+      "path": "backend/settings.py",
+      "bytes": 1025,
+      "sha256": "e49bcf407290c3bfc568a4e8855feffba32be92c34e825f869e679084f563beb"
+    },
+    {
+      "path": "backend/static/index.html",
+      "bytes": 8206,
+      "sha256": "1beda1c37a99cf116439db2c17398043643a73d8f0f7fb02281772c72f89d030"
+    },
+    {
+      "path": "backend/storage.py",
+      "bytes": 13341,
+      "sha256": "6b239692ca22b4eecbebf227c800190cc7c0da9715ccb5d5950c5d44ecedeae8"
+    },
+    {
+      "path": "backend/tests/test_backend.py",
+      "bytes": 12654,
+      "sha256": "4f5495527f2974d2c392d8e32802ce8523ff05a415fcda2d6bba8d81dfbb11d9"
+    },
+    {
+      "path": "backend/tests/test_integration.py",
+      "bytes": 7008,
+      "sha256": "18607fc8e7383e5d9de8b21ffdeb415b72f837e4c16a8b9dcbeb001b707f9197"
+    },
+    {
+      "path": "backend/validation.py",
+      "bytes": 8555,
+      "sha256": "8c4ccfc83c63cc5cc804a54307a5217727f1f6fe4478df9555b01743a17e8b30"
+    },
+    {
+      "path": "blockchain/admin.mjs",
+      "bytes": 3605,
+      "sha256": "f12e06f56a4fd0ca321951209af4606dde49eff499528d24c6088d47f6497490"
+    },
+    {
+      "path": "blockchain/bridge.mjs",
+      "bytes": 3602,
+      "sha256": "a574a0488e00c7fe4ad360afdd9b73e38e4fc722636bf3a3694c74e4005abc01"
+    },
+    {
+      "path": "blockchain/compile.mjs",
+      "bytes": 1615,
+      "sha256": "61ee8a2f878e24ae70d743d7e3389974704bbffec35c5fb3167d56b8b8ac4f85"
+    },
+    {
+      "path": "blockchain/deploy.mjs",
+      "bytes": 1133,
+      "sha256": "682a4176b0b50977477924510f19370614c69050451ec119fe3c3860d22b3d52"
+    },
+    {
+      "path": "blockchain/hardware-demo.mjs",
+      "bytes": 5830,
+      "sha256": "646b9b6c5af15ddbf46eda1bed43f4e33284882472f5ce9dca5e74d0c1614d56"
+    },
+    {
+      "path": "blockchain/lib/backend.mjs",
+      "bytes": 7303,
+      "sha256": "e707bfdcab7be0305a16991702678001252731e2c11b68abb0481fe0c25f4645"
+    },
+    {
+      "path": "blockchain/lib/chain.mjs",
+      "bytes": 4954,
+      "sha256": "bca4f73f3e5ab32690dd69c58d2238f7fcd39fe7cd1e1a439af01262bfb9e475"
+    },
+    {
+      "path": "blockchain/lib/files.mjs",
+      "bytes": 2426,
+      "sha256": "9459185c11ad900a7f8f5a87ea1e4a36d02254f183cfcd8b67b66b9b6ba5dccd"
+    },
+    {
+      "path": "blockchain/lib/hardware-source.mjs",
+      "bytes": 7592,
+      "sha256": "84eca3feebd99c3f2dc447fe56997f50272ca8737f60ab64def3f8fb96e8c688"
+    },
+    {
+      "path": "blockchain/lib/hybrid-market.mjs",
+      "bytes": 11612,
+      "sha256": "30b3724209497c03b82a6f24fd5f267aa62172906d06bd846df5e27023f7701f"
+    },
+    {
+      "path": "blockchain/lib/market.mjs",
+      "bytes": 8779,
+      "sha256": "0e5ef061c16946d051608d657ba46b40b3b791bbff75dd4ebab878c114ef6cd8"
+    },
+    {
+      "path": "blockchain/lib/mqtt-schema.mjs",
+      "bytes": 3162,
+      "sha256": "56b7f033cfd57434ad9f32ddd982b5f2a5ecd44d79e39924422cda91309de245"
+    },
+    {
+      "path": "blockchain/lib/simulation-controller.mjs",
+      "bytes": 3598,
+      "sha256": "482ebb82f1d0f1f4870f1d2c18116ceaf47854327b0c2fe84a051c3e6028190d"
+    },
+    {
+      "path": "blockchain/lib/simulation-evaluation.mjs",
+      "bytes": 2560,
+      "sha256": "3f425cc5d9cab1d25c1298b45c940f0ff289fce10b67b726e3a151ebd5cc4b3d"
+    },
+    {
+      "path": "blockchain/lib/simulation-mqtt.mjs",
+      "bytes": 3106,
+      "sha256": "6e2d1e4ca93bfe6c4564a718bcc31b8b7bc93f51ca4976a8b2c6a64b3b53ac53"
+    },
+    {
+      "path": "blockchain/lib/simulation-runtime.mjs",
+      "bytes": 12500,
+      "sha256": "320b106f042e673a905803afe9f1dc87f0499d2a31009cf7f8fbb1e94db7cc89"
+    },
+    {
+      "path": "blockchain/lib/test-node.mjs",
+      "bytes": 2320,
+      "sha256": "5b59a693e94902a71cf3b7a67a7f507bcc5fe22728ff97259d7f7cdf53225820"
+    },
+    {
+      "path": "blockchain/lib/transaction-journal.mjs",
+      "bytes": 2574,
+      "sha256": "74cbcf9934863648fe07a217b29001edb5f39fe7bc93fafa2ffc9880b1ce1a51"
+    },
+    {
+      "path": "blockchain/market-orchestrator.mjs",
+      "bytes": 22413,
+      "sha256": "916f87232178cc4723882576838a3281f5ee5217287b0d419edc0e367330dd03"
+    },
+    {
+      "path": "blockchain/mqtt-gateway.mjs",
+      "bytes": 18148,
+      "sha256": "435f9c39e56a770591e2e2681b0a6e61accf34e05d920b634140d8dbc6c10ada"
+    },
+    {
+      "path": "blockchain/report.mjs",
+      "bytes": 1665,
+      "sha256": "bf62825899fbe672338f869d2910bd15bd54a870a532342074d55141c3d2e44d"
+    },
+    {
+      "path": "blockchain/run-tests.mjs",
+      "bytes": 456,
+      "sha256": "c86a91cd7fa80088a8a774cdbabd7284846276ad28bcf9c2a8581a959ce7a3db"
+    },
+    {
+      "path": "blockchain/settle.mjs",
+      "bytes": 1028,
+      "sha256": "99adf378cdc7373e3bf906bbb31927c10a5b5609b9ee9cd061bf88b0154fd892"
+    },
+    {
+      "path": "blockchain/simulation-hardhat.config.mjs",
+      "bytes": 322,
+      "sha256": "80bfc0645f6376c6e76b6dc9ba5e7aa8531da95cb5f7a738cd89190635054290"
+    },
+    {
+      "path": "blockchain/simulation-market.mjs",
+      "bytes": 2685,
+      "sha256": "7054f88547cf8128cc526b7c36c4092da5750b33301d07358172851b4dcec4c2"
+    },
+    {
+      "path": "blockchain/simulation-server.mjs",
+      "bytes": 6709,
+      "sha256": "1b35078109f8c2a2d2e25c38d8781af7ded3ba47f050010b8505721261002e84"
+    },
+    {
+      "path": "blockchain/test-integration.mjs",
+      "bytes": 8180,
+      "sha256": "9548e4aa2250523923fdee3f9c2a4d636748a3ce79a5cf6b63bd3c951c2236aa"
+    },
+    {
+      "path": "blockchain/test-simulation.mjs",
+      "bytes": 598,
+      "sha256": "ecf8fb6d1ade1b72c1290ef22a66e5ff87212c203728413e068658c8a8fa4231"
+    },
+    {
+      "path": "blockchain/tests/backend_fixture.py",
+      "bytes": 2587,
+      "sha256": "366788145495d5c87580ef9e5bbc0882e13b41576a8ea2e47c98f2141d7f0e6a"
+    },
+    {
+      "path": "blockchain/tests/bridge.test.mjs",
+      "bytes": 3893,
+      "sha256": "a5623e7512eb534f40b1937557acd2d587015f86dbb66aeeed39ebf9d1f9e22e"
+    },
+    {
+      "path": "blockchain/tests/community.test.mjs",
+      "bytes": 2891,
+      "sha256": "5c02c5f299fbac0166285aaf9fc3b17c20da4692b2e0354b1ebc32e07c3fe325"
+    },
+    {
+      "path": "blockchain/tests/contracts.test.mjs",
+      "bytes": 18505,
+      "sha256": "bbdf9801a3e2c84e5b88b8f36717147f7fa2adcd4c6fb84050918b447e046497"
+    },
+    {
+      "path": "blockchain/tests/hybrid.test.mjs",
+      "bytes": 12037,
+      "sha256": "b822a9b2617afebe89d05b32acea770fd774175b12321be0e4b936c7334e64eb"
+    },
+    {
+      "path": "blockchain/tests/simulation.test.mjs",
+      "bytes": 7154,
+      "sha256": "e2913a22fccad0003382c1fd1ac0c117f8e427c014068845f808c664f2210277"
+    },
+    {
+      "path": "config/edge_demo.json",
+      "bytes": 575,
+      "sha256": "d33c5296aee9b24e7758aeeca56192ba9b393871b19bcb0e2a90ceb0a23a38b6"
+    },
+    {
+      "path": "config/homes.json",
+      "bytes": 569,
+      "sha256": "ffeeeb47ba8b92b33c1674454bf89032ecdd3301f0278dc44313be9470229da7"
+    },
+    {
+      "path": "config/market_simulation.json",
+      "bytes": 1941,
+      "sha256": "33e2dd4fd21768b9829c0296449f3165c92ee39999babb2f91546909f0bf3d18"
+    },
+    {
+      "path": "contracts/EnergyMarket.sol",
+      "bytes": 16618,
+      "sha256": "26486d7f782e8e9afa82e2815d6f8803b82c693eae7eab0da4e56cd57542410d"
+    },
+    {
+      "path": "contracts/SolarToken.sol",
+      "bytes": 420,
+      "sha256": "2461b1027a2e4b36be09297ce681f19256760ed2e3db3d8527acb06613e20a85"
+    },
+    {
+      "path": "dashboard/index.html",
+      "bytes": 382,
+      "sha256": "fc85b3efd125f309ca51fb8bbf06743dffbb1a59e0a1b8b4b25afc7be4cc8782"
+    },
+    {
+      "path": "dashboard/public/sun.svg",
+      "bytes": 277,
+      "sha256": "f1ab6ca99688c2e59bc8fdcee125b22b9f981b8c54536072ed6ec7790239f9ba"
+    },
+    {
+      "path": "dashboard/server.mjs",
+      "bytes": 16618,
+      "sha256": "1b67aca47c50c1ba18e1ba44bd66644e1cbe1db5c7d9707c4148f790d6870972"
+    },
+    {
+      "path": "dashboard/src/App.jsx",
+      "bytes": 48931,
+      "sha256": "ca4515a4fbf7a3bc4f02f5368e5827e455e0e810f188ca2f5a2ef89f5286fbf6"
+    },
+    {
+      "path": "dashboard/src/main.jsx",
+      "bytes": 391,
+      "sha256": "8d0ff765fcb138e53b6c2183084e35669cb2da47f11eac57e87c2f8a57b0f7f6"
+    },
+    {
+      "path": "dashboard/src/simulation.css",
+      "bytes": 12649,
+      "sha256": "282fa9e94aa8941d59668be5831b85774273f783ba16684b5e020b6df16ead15"
+    },
+    {
+      "path": "dashboard/src/Simulation.jsx",
+      "bytes": 19033,
+      "sha256": "739b294ee1a5e71740e0472cca6b8a35d43a0507ed59cc3c04939f20ffb9aeda"
+    },
+    {
+      "path": "dashboard/src/SimulationEvaluation.jsx",
+      "bytes": 32470,
+      "sha256": "06080048510cfdb6e4c7b741a876dd7216e347aafe600f07fa11862eb262f72c"
+    },
+    {
+      "path": "dashboard/src/style.css",
+      "bytes": 18274,
+      "sha256": "ecf73ed50e0f2deb28d3cd913578d2921a63f4e4e490d2c5645de66335726d4a"
+    },
+    {
+      "path": "dashboard/src/wallet.mjs",
+      "bytes": 10536,
+      "sha256": "053c43fe7f523113813963e0c0b46404b2d32ce6f0d05d15536425a7f00e9726"
+    },
+    {
+      "path": "dashboard/tests/backend_fixture.py",
+      "bytes": 2662,
+      "sha256": "89a0b1e8d44cd8e8b91b9298531997e66a4ccf02e183cf80029ce6cdf9b29e74"
+    },
+    {
+      "path": "dashboard/tests/community.mjs",
+      "bytes": 5279,
+      "sha256": "9505a72405ca5714d2d770b07f19668f17f835448a8e04f5ac567e4715b1e0a0"
+    },
+    {
+      "path": "dashboard/tests/hybrid.mjs",
+      "bytes": 3680,
+      "sha256": "4f43c89e5b5fe339b1bb0f8435109e38ac14dcc035ffd6756da8d1c7d8c65edd"
+    },
+    {
+      "path": "dashboard/tests/run.mjs",
+      "bytes": 20234,
+      "sha256": "22ebc4c7da2321dd96b399e28230763c605a1a1ed45eadc84d581b18bf84e2cc"
+    },
+    {
+      "path": "dashboard/tests/simulation.mjs",
+      "bytes": 10040,
+      "sha256": "0f4dc99a67bc1236434dd6daefc5c4ea3ff2ada1561555d21d5211f6686f705a"
+    },
+    {
+      "path": "dashboard/tests/wallet.test.mjs",
+      "bytes": 4332,
+      "sha256": "b4029e4a48781d6c8ccce5837cc1c9c6e86917abb93b2c01ce53875b27cd1803"
+    },
+    {
+      "path": "dashboard/vite.config.mjs",
+      "bytes": 305,
+      "sha256": "05bc5fdb870048beeb9e8b1ff26876da07537a51f43cf2bcf718cc69ba9e98b6"
+    },
+    {
+      "path": "data/training_30days.csv",
+      "bytes": 5621330,
+      "sha256": "3447ab9c797392fc9ad7a580aeb0c7f828ec8b564d4efac97dc43d49872af388"
+    },
+    {
+      "path": "docs/DAN_Y_BAO_CAO.md",
+      "bytes": 4614,
+      "sha256": "6d7462b74def6edc2e1dd6db224a351cde7d200fa6282890ee04f88e0dd7116c"
+    },
+    {
+      "path": "docs/EDGE_AI.md",
+      "bytes": 17430,
+      "sha256": "7f963779bf23ce6e304bc941a03c99d1be34c3d6c1b26ad2a396c4ec4044c465"
+    },
+    {
+      "path": "docs/EDGE_VALIDATION.md",
+      "bytes": 6088,
+      "sha256": "fe1dd48270c9335fdb1927ebba9e3945e1993656df462ed772c9a2e86536c8ff"
+    },
+    {
+      "path": "docs/HUONG_DAN_CHAY_CHO_NHOM.md",
+      "bytes": 18398,
+      "sha256": "45473da30df9c5a9d0980f13cfaa55d7010260c84f7f04479716ffd1e12ccd49"
+    },
+    {
+      "path": "docs/HUONG_DAN_CHAY_LAI.md",
+      "bytes": 8575,
+      "sha256": "5917419b0908838b0ffc3fe530a763cb40810654eec538fbe6f0e2bd4dcf1444"
+    },
+    {
+      "path": "docs/HYBRID_ESP32_11_HOMES.md",
+      "bytes": 11738,
+      "sha256": "4fd8735ac181f22b2499a4221fd513063617489631d74fa24e2076f1674314a1"
+    },
+    {
+      "path": "docs/LEGACY_README.md",
+      "bytes": 19644,
+      "sha256": "f54e829d87c6991128a93f7249190c262cf6a3c6db7eb2e2404e1c227093541e"
+    },
+    {
+      "path": "docs/MQTT_MARKET_SIMULATION.md",
+      "bytes": 15007,
+      "sha256": "38c0169163276e093aa5728c156fcd19c0c86188170559238b801e6745cd3a34"
+    },
+    {
+      "path": "docs/MQTT_SIMULATION_VALIDATION.md",
+      "bytes": 2296,
+      "sha256": "21d3c321b5c5e7f2e828fb6f2e9bace83677fb088862e75a99e74dfa43872225"
+    },
+    {
+      "path": "docs/PHASE1B.md",
+      "bytes": 15277,
+      "sha256": "9ccfe5d058dd6fe97ce0913c8472266a58760b7a58099b4038ad6bd821c08598"
+    },
+    {
+      "path": "docs/PHASE2.md",
+      "bytes": 17374,
+      "sha256": "f5d1d78626b81597951ee48fec897cb291e1f9b1109820bd18fed0678e8922e7"
+    },
+    {
+      "path": "docs/PHASE2_VALIDATION.md",
+      "bytes": 4102,
+      "sha256": "7b5653b53b45a996afe58ad832cd00a97857785398d498524d399970bf49ac2c"
+    },
+    {
+      "path": "docs/PHASE3.md",
+      "bytes": 19994,
+      "sha256": "aa521888075b68399d40170f967b685b067214f4015e7f166f220e4addccef1c"
+    },
+    {
+      "path": "docs/PHASE3_VALIDATION.md",
+      "bytes": 6110,
+      "sha256": "8a58745101aaf052d23eccd4ff0d77189eb5fbccfc498fa8182b90df14bd3a6a"
+    },
+    {
+      "path": "docs/phase4-market-settled.png",
+      "bytes": 208760,
+      "sha256": "011f61b918e316e73071a71249cb40563e558d93d07b8f2d43b38ffbeef03ad9"
+    },
+    {
+      "path": "docs/phase4-mobile.png",
+      "bytes": 132930,
+      "sha256": "814882c2b681f903c5666fcd4397fba7c4b784347884f092f8a26b2d7e38572a"
+    },
+    {
+      "path": "docs/phase4-overview.png",
+      "bytes": 166351,
+      "sha256": "4e61b8fe2e8123af727a8f8a729d88d2f7677d42bc4f53b303dacb9d45c038b6"
+    },
+    {
+      "path": "docs/phase4-receipt.png",
+      "bytes": 162802,
+      "sha256": "f63ef84f612f5baf03ef3964636c27e2038039564038d63b644a93b47a6d39bf"
+    },
+    {
+      "path": "docs/PHASE4.md",
+      "bytes": 24629,
+      "sha256": "27f8e77473b82258b1bfd34f3d008317c4a654211879f7c149b8dcb1fe3c1791"
+    },
+    {
+      "path": "docs/PHASE4_MARKET_FIX.md",
+      "bytes": 4648,
+      "sha256": "ae82b6e6bbc2c9baebaeaabe2acc418c391dc81d6066391d81f23d0c6ffc9131"
+    },
+    {
+      "path": "docs/PHASE4_VALIDATION.md",
+      "bytes": 6380,
+      "sha256": "9208c8dc87bd576daef85fb35ce41b8d085982876a874a6797141ff2190445bf"
+    },
+    {
+      "path": "docs/PV_UPDATE.md",
+      "bytes": 2902,
+      "sha256": "8e36bb4a7e49a94f78a3025034a13dcd57dbb921218a2326a6a5b28ced570b47"
+    },
+    {
+      "path": "docs/SIMULATION_EVALUATION.md",
+      "bytes": 7867,
+      "sha256": "7b1978b53073abb5e84f7bfbaca36ca5a02ad309155d17470b19878eea0c8c49"
+    },
+    {
+      "path": "docs/SIMULATION_EVALUATION_VALIDATION.md",
+      "bytes": 4675,
+      "sha256": "549c16182fda4187834b7f137bdb8a570a567741b2f213eab89bc65bb89d1dc0"
+    },
+    {
+      "path": "docs/simulation_sample_report.json",
+      "bytes": 325972,
+      "sha256": "42cfe5b4e87d423afc62b6f17cdaa78ff84b52294062fbd44a13c9fd17a7dfd6"
+    },
+    {
+      "path": "docs/SMART_CONTRACT_FEATURES.md",
+      "bytes": 8828,
+      "sha256": "53799f3a1be69e9b798b7ad0c50c0d18ed440772376199d19299b3731ed89dbe"
+    },
+    {
+      "path": "docs/TEAM_VALIDATION.md",
+      "bytes": 3929,
+      "sha256": "d444afd1caf0fdebb3132cf22cd21040e928a56b666e6431b2cbdaf4e680fbb1"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3806,
+      "sha256": "a503df6ab62efa7e05d85b8bcd45493f1e6cb0e200d77d696e0e66c869ecaa46"
+    },
+    {
+      "path": "examples/telemetry.json",
+      "bytes": 523,
+      "sha256": "7a009dd4cf2baa03396a9846f37b82c519209403e6d6d5b94dc0f2f8ee8efc53"
+    },
+    {
+      "path": "hardhat.config.ts",
+      "bytes": 431,
+      "sha256": "8000fff0d3694e897886a49952f217fdd9028ccc56671db3a249242fa93ca6ee"
+    },
+    {
+      "path": "iot_code/__init__.py",
+      "bytes": 63,
+      "sha256": "07d2fb79f4ca59df99172c072a00f797fa98529c815a20c0c57affd000b6100b"
+    },
+    {
+      "path": "iot_code/blockchainV2.ino",
+      "bytes": 29168,
+      "sha256": "f4b5c2b03e4bf3f8fa55550984713b0206cf871c6c7c4b209861afe5b60e71f7"
+    },
+    {
+      "path": "iot_code/config.py",
+      "bytes": 3670,
+      "sha256": "3e30a7b35cb08df399db5cdb890ca3f1a44867b458460643abd217e6b86b137b"
+    },
+    {
+      "path": "iot_code/delivery_model.py",
+      "bytes": 1092,
+      "sha256": "d0290b273e146a36de38ded125808b602ad426321eebbf808a4d93a37adc5a5e"
+    },
+    {
+      "path": "iot_code/edge_monitor.py",
+      "bytes": 13421,
+      "sha256": "c4004471e8da9d23d95fc6bff5b6a829bb017fd46cbdb10aee594a2a26de3e48"
+    },
+    {
+      "path": "iot_code/firmware/blockchain_v2/.gitignore",
+      "bytes": 99,
+      "sha256": "d952abf002d5e1ec80c8ab1bfc9f38eb5b62fc310667d501cb2ce9f21c3effb2"
+    },
+    {
+      "path": "iot_code/firmware/blockchain_v2/platformio.ini",
+      "bytes": 360,
+      "sha256": "108314259923ad9e0e1ae161f66b20365eb93ddcf27edce9a18163f4e2944c34"
+    },
+    {
+      "path": "iot_code/firmware/blockchain_v2/README.md",
+      "bytes": 6767,
+      "sha256": "93cc948bf8fce4617ccdefbd53e1a70303c7d845998d6b06088e08d6409b29b3"
+    },
+    {
+      "path": "iot_code/firmware/blockchain_v2/src/main.cpp",
+      "bytes": 122,
+      "sha256": "d39e6f5893576f3665f17df524af9b5205408036fa1c61affa13f87c163a1f92"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/.gitignore",
+      "bytes": 99,
+      "sha256": "d952abf002d5e1ec80c8ab1bfc9f38eb5b62fc310667d501cb2ce9f21c3effb2"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/CMakeLists.txt",
+      "bytes": 113,
+      "sha256": "af2fa554725e9dd84a553ea84d8719ba0000aeb3fcc5ca872bc923adc28f370b"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/dependencies.lock",
+      "bytes": 1684,
+      "sha256": "6f806193e38939136fd32a80651d03bb79729692c633e671dead2be7e97f8f08"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/CMakeLists.txt",
+      "bytes": 342,
+      "sha256": "20614698f7800ba69d1063a218705e819f7a9c5c0e5861f3d1a696aa18aa8e95"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/i2c_bus.cc",
+      "bytes": 534,
+      "sha256": "5e50f517ba60303af03ac911532ef3e7f8aa403b4d1578ca9489d5c4ca603ab7"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/i2c_bus.h",
+      "bytes": 207,
+      "sha256": "7ed1cd447d061d270b10e99718acce24fdbfff2e76cefc2da5bddd90f1e4a434"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/idf_component.yml",
+      "bytes": 111,
+      "sha256": "3b10a13174a4562dc529ead85323761640f858e6e4516e3555ee175266c4742e"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/Kconfig.projbuild",
+      "bytes": 514,
+      "sha256": "f5932884e5abaca1f7e3581ac845543850d7378ad21038973bfd0305c83eb3a3"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/lcd_display.cc",
+      "bytes": 8206,
+      "sha256": "2a8c874d3768920cd306afc1b5b0057c13eb31121ad1cf3b3eaef2f3e8c2381e"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/lcd_display.h",
+      "bytes": 481,
+      "sha256": "c859461f685ad8ebb249b72d798fcf264aecad431bd4ac3788804821eabe8051"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/main.cc",
+      "bytes": 36876,
+      "sha256": "17fa96ae5bfe5534560d7c97c45a16d8b096f901d6b21b87ddb167ee0bb8aadd"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/model_data.h",
+      "bytes": 18119,
+      "sha256": "3b510ab91b79295cdc16a74eddb27358766311473df206cc3f43d0ca395a64e1"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/power_measurement.h",
+      "bytes": 8024,
+      "sha256": "95f894a7a0e9be063caee6967a74ffd0c0db8cdaa4ed02cf51d1b26ca1348885"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/power_meter.cc",
+      "bytes": 3604,
+      "sha256": "dfdea4fa5fd4f1ed1d0dda7d642bd2f71ece996dcec9825e77f283ef2ecd33ed"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/power_meter.h",
+      "bytes": 313,
+      "sha256": "e1b1abd87abcfb11b12d2ef7fe5972834da8df6c543974f419f7802489d8a544"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/real_telemetry.cc",
+      "bytes": 6055,
+      "sha256": "6b34f757ad8f933c932a93163089c105e3021e77c6c1866faffa5f71bfd8c128"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/real_telemetry.h",
+      "bytes": 564,
+      "sha256": "1b732601d33bb9797cb1d564fd35c3433d14a7e1c9c599165160bd28c5df9e45"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/solar_features.h",
+      "bytes": 4212,
+      "sha256": "15e2af193b6ab1c281914024a8efc932467e09ed7c4d290a28b462a480951558"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/temperature_sensor.cc",
+      "bytes": 3162,
+      "sha256": "b27c8f7c7afc987718d4fc8ceef0740bb2e3dd4c9a3b100b8f164a6646d38c5b"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/main/temperature_sensor.h",
+      "bytes": 320,
+      "sha256": "8182f0cbef7ffb68fa8299f766c56f8c7169f616c9c10ac2b98a7284a10e7bee"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/platformio.ini",
+      "bytes": 458,
+      "sha256": "9543877678ef85e0d230c44764e95a8bc6eebe78a30100e25c6bed5b3a9dbf64"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/README.md",
+      "bytes": 18763,
+      "sha256": "2e4a45be25f5c7f3e35c820a6d464e9c86cdb0dda332c3f61fd6f90cc1126c8c"
+    },
+    {
+      "path": "iot_code/firmware/esp32_edge/sdkconfig.defaults",
+      "bytes": 386,
+      "sha256": "1fdca4cd1c761b72fd015bc6ba9d7e9afecaee8b80e9c6d2bdb05445eb8fca1a"
+    },
+    {
+      "path": "iot_code/household_agent.py",
+      "bytes": 2184,
+      "sha256": "0de444c71612ef37f32ed45063c086ed24e1721f836ef5a5027757ef60cf3918"
+    },
+    {
+      "path": "iot_code/market_profiles.py",
+      "bytes": 1599,
+      "sha256": "c82adc85df9ea474579bcf467fb01375d1f5ecf499ceb897e6b08f1637d15cab"
+    },
+    {
+      "path": "iot_code/market_simulator.py",
+      "bytes": 8242,
+      "sha256": "b3235765881f45bf39ac72e78aacf77be0b98a174a5e568903450d30715c1420"
+    },
+    {
+      "path": "iot_code/market_transport.py",
+      "bytes": 4342,
+      "sha256": "4dda23abccc30eb0cb804ad4d2120149ec3a4c14b0ec900bfe03be102f4c7b9b"
+    },
+    {
+      "path": "iot_code/model.py",
+      "bytes": 6382,
+      "sha256": "8143b16388e05d15b8b98e76c8801586852c71b22cdc0c3a5ddd2d6b207c43c8"
+    },
+    {
+      "path": "iot_code/panel.py",
+      "bytes": 19201,
+      "sha256": "7769fd6a0d9b90588e7e31abe94ac990b6056a3c643aa1771af0f11683c55434"
+    },
+    {
+      "path": "iot_code/runtime.py",
+      "bytes": 4187,
+      "sha256": "ab628fd5f07460cb4b4997a09ba1ee5191274d1e89e23783b629d692a201001f"
+    },
+    {
+      "path": "iot_code/simulator.py",
+      "bytes": 8693,
+      "sha256": "e36cb26e61b7a39bded3f9d0c84d1879f2049a09652af231bf765286da012c1b"
+    },
+    {
+      "path": "iot_code/subscriber.py",
+      "bytes": 4724,
+      "sha256": "3046955df1352949919f1ae49a0124d5624bafb5788dcb02f908243341cd2d4f"
+    },
+    {
+      "path": "mosquitto.conf",
+      "bytes": 160,
+      "sha256": "6e00e4abb02ed565cd4f061c5dc5218cf5a9cb77d30c9c3becc496e1b5775aca"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 79988,
+      "sha256": "388c6835928e29e8d3cc0b7050544b856a645fd8d766ca24c4db6ec9b7a2cbe9"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1982,
+      "sha256": "139f0fef6dfa7edd8ed1a5fe89702ec97bb1e5119be6a5e09860a93811e87b2d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12727,
+      "sha256": "6c722fef0fa37286a467f758023e5209ddd8b6a5053feb1ab4ed7373883ba725"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 17,
+      "sha256": "86373a1cba103ebb9c560f2d18bcf42559f01c9341edee7add4302dcdeb15e09"
+    },
+    {
+      "path": "scripts/configure_team_esp32.ps1",
+      "bytes": 2883,
+      "sha256": "663af9ba0d5600a43cb5a1d502c0a1df55e7f442908ffca487ee6633439aeb2a"
+    },
+    {
+      "path": "scripts/package_team.py",
+      "bytes": 10091,
+      "sha256": "bf0023cb6c0a7ed7798854cbaf24d5ad252594c60fc925150822e05135230098"
+    },
+    {
+      "path": "scripts/setup_edge_broker.ps1",
+      "bytes": 2833,
+      "sha256": "b14a582f6ea832ec282f50e8ef82ea7af26bd48e8d8210e2c64188416ee8e793"
+    },
+    {
+      "path": "tests/edge_features_probe.cc",
+      "bytes": 2154,
+      "sha256": "684442e1e10a167f853428d736a50ee25eb160b599f4574b9b4314ce8a2bcc76"
+    },
+    {
+      "path": "tests/mqtt_test_broker.py",
+      "bytes": 983,
+      "sha256": "2a613c5efc65cd443a0c963a5840d20ad82b90e34189b29922c3f60714207376"
+    },
+    {
+      "path": "tests/power_measurement_probe.cc",
+      "bytes": 11465,
+      "sha256": "c1b3222eb847f033af3cf0d26afb850f8af7796391896ec4503e85c61f44ab20"
+    },
+    {
+      "path": "tests/test_edge.py",
+      "bytes": 7352,
+      "sha256": "6642621d2d28a55c7b485b276d47897c6314dc913f1b20685939545a9b0fdc8c"
+    },
+    {
+      "path": "tests/test_edge_mqtt.py",
+      "bytes": 4290,
+      "sha256": "096c8b191986bff23bd9101ff170fdbbd888d6ea548518fd16f32cdbc028a7ab"
+    },
+    {
+      "path": "tests/test_edge_relays.py",
+      "bytes": 5121,
+      "sha256": "48eb1395fad17d2bcee104679a700d4acd361b79f017caf9b38b001a25446815"
+    },
+    {
+      "path": "tests/test_market_simulation.py",
+      "bytes": 6006,
+      "sha256": "08ddfb074e85eb930dc85e1849cd4a76122b937885d60d49c8d0401f562b12bb"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 2980,
+      "sha256": "cac3158538796ecb81c7c9ce1eab07c09383c0134899b881d99cdfe3279ebb68"
+    },
+    {
+      "path": "tests/test_mqtt_integration.py",
+      "bytes": 8862,
+      "sha256": "8575ff96e39d92795c34cbc2aa1d0d1b91266e3614ed9d532ab090385d3f47c8"
+    },
+    {
+      "path": "tests/test_phase1b.py",
+      "bytes": 5251,
+      "sha256": "8ef862fb1bd9ced339caf63712152ab29b4791e07dad6cf6d47cbc7c223cd65b"
+    },
+    {
+      "path": "tests/test_power_measurement.py",
+      "bytes": 6708,
+      "sha256": "e22dede2bb1affda5cfff2ea09e38b41a5a60a5dd626d61251d1e5c500eea473"
+    },
+    {
+      "path": "tests/test_pv_controls.py",
+      "bytes": 3456,
+      "sha256": "ccabfea670df47b45ca85b7869b03f151ab83ed8dd67591daab365ef29f9a160"
+    }
+  ],
+  "omitted": [
+    "dependencies/venvs",
+    "build/cache",
+    "personal network configuration",
+    "live databases"
+  ],
+  "firmware_credentials": "placeholders in the submission copy only",
+  "formal_report": "not authored; outline provided in docs/DAN_Y_BAO_CAO.md"
+}

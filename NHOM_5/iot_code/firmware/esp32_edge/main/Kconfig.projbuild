@@ -1,0 +1,17 @@
+menu "Solar Edge AI"
+    config SOLAR_WIFI_SSID
+        string "Wi-Fi SSID (2.4 GHz)"
+        default ""
+    config SOLAR_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default ""
+    config SOLAR_MQTT_URI
+        string "Broker LAN URI, e.g. mqtt://192.168.2.5:1885"
+        default "mqtt://192.168.2.5:1885"
+    config SOLAR_MQTT_USERNAME
+        string "MQTT username"
+        default "solar_edge"
+    config SOLAR_MQTT_PASSWORD
+        string "MQTT password"
+        default ""
+endmenu

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "seed": 20261003,
+  "start": "2026-10-03T11:00:00+07:00",
+  "step_seconds": 300,
+  "bidding_seconds": 300,
+  "initial_slc": 1000,
+  "homes": [
+    {"id":"home_01","name":"Nhà phát điện 1","pv_kw":6,"base_load_kw":0.6,"category":"ordinary","ask":2000,"bid":3000,"delivery_bps":10000},
+    {"id":"home_02","name":"Nhà tiêu thụ 2","pv_kw":0,"base_load_kw":1.2,"category":"ordinary","ask":2200,"bid":3000,"delivery_bps":10000},
+    {"id":"home_03","name":"Bệnh viện công","pv_kw":0,"base_load_kw":2.8,"category":"hospital","ask":2000,"bid":3000,"delivery_bps":10000},
+    {"id":"home_04","name":"Bệnh viện tư","pv_kw":0,"base_load_kw":2.4,"category":"hospital","ask":2100,"bid":3000,"delivery_bps":10000},
+    {"id":"home_05","name":"Trường mầm non","pv_kw":0,"base_load_kw":1.8,"category":"kindergarten","ask":2000,"bid":3000,"delivery_bps":10000},
+    {"id":"home_06","name":"Hộ hoàn cảnh đặc biệt","pv_kw":0,"base_load_kw":1.0,"category":"special","ask":2000,"bid":3000,"delivery_bps":10000},
+    {"id":"home_07","name":"Nhà phát điện 7","pv_kw":5,"base_load_kw":0.7,"category":"ordinary","ask":1900,"bid":2800,"delivery_bps":10000},
+    {"id":"home_08","name":"Nhà phát điện 8","pv_kw":4.5,"base_load_kw":0.8,"category":"ordinary","ask":2100,"bid":2900,"delivery_bps":10000},
+    {"id":"home_09","name":"Nhà phát điện 9","pv_kw":6.5,"base_load_kw":0.5,"category":"ordinary","ask":2300,"bid":3100,"delivery_bps":10000},
+    {"id":"home_10","name":"Nhà phát điện 10","pv_kw":3.5,"base_load_kw":0.6,"category":"ordinary","ask":2400,"bid":3000,"delivery_bps":10000},
+    {"id":"home_11","name":"Nhà tiêu thụ 11","pv_kw":0,"base_load_kw":1.5,"category":"ordinary","ask":2000,"bid":3200,"delivery_bps":10000},
+    {"id":"home_12","name":"Nhà phát điện 12","pv_kw":4,"base_load_kw":0.6,"category":"ordinary","ask":2000,"bid":3000,"delivery_bps":10000}
+  ]
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SOLAR LAB · Phase 2</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173934;background:#f1f4ee}*{box-sizing:border-box}body{margin:0}main{max-width:1200px;margin:auto;padding:32px 24px}header{display:flex;justify-content:space-between;align-items:center;gap:20px}h1{font-size:34px;margin:8px 0}h2{font-size:19px;margin:0 0 15px}p{line-height:1.6}.eyebrow{font-size:12px;letter-spacing:2px;color:#557466;font-weight:700}.muted{color:#63766f;font-size:14px}.badge{padding:10px 16px;border-radius:40px;background:#fff1c9;font-weight:650}.ok{background:#d7eedf;color:#19563b}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}.card{padding:23px;background:#fff;border:1px solid #dce4da;border-radius:16px;min-width:0}.number{font-size:34px;font-weight:700;margin:9px 0}.split{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin:20px 0}.note{border-left:4px solid #d3a947;padding:10px 17px;background:#fff6de;font-size:14px;line-height:1.6}.toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:24px}select{padding:10px;border:1px solid #c5d4c7;border-radius:8px;background:white;max-width:100%}a{color:#116e54}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #e7ece6;white-space:nowrap}th{color:#617068;font-weight:600}code{overflow-wrap:anywhere}.error{color:#aa2b2b}footer{margin-top:24px;font-size:13px;color:#617068}.blank{padding:20px;color:#63766f}@media(max-width:750px){.grid,.split{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}h1{font-size:28px}}
+</style>
+<main>
+<header><div><div class="eyebrow">SOLAR LAB / PHASE 2</div><h1>Dữ liệu & đề xuất điện năng</h1><div class="muted">Số đo mô phỏng · Dự báo từ ESP32 · Nhật ký SQLite</div></div><div id="status" class="badge">Đang kết nối backend…</div></header>
+<div class="toolbar"><label for="run">Lượt mô phỏng</label><select id="run"><option value="">Theo dõi lượt mới nhất</option></select><a href="/docs" target="_blank" rel="noopener">API / Swagger</a><a href="/health" target="_blank" rel="noopener">Trạng thái hệ thống</a><a href="/api/blockchain/rounds" target="_blank" rel="noopener">Biên lai blockchain local</a></div>
+<p id="counter" class="muted">Chờ dữ liệu…</p>
+<div class="grid" id="homes"></div>
+<div class="split"><section class="card"><h2>Dự báo gần nhất · Nhà 1</h2><div id="forecast" class="blank">Mở backend trước simulator. ESP32 cần 12 mẫu liên tục để dự báo.</div></section><section class="card"><h2>Quy tắc đề xuất</h2><p id="policyText">Đang đọc cấu hình…</p><div class="note">Đề xuất từ dự báo là đầu vào cho Phase 3. Chỉ khi có biên lai xác nhận mới ghi nhận phiên blockchain local. Token và lệnh đối ứng dùng để mô phỏng; hệ thống chưa xác minh giao điện thực tế.</div></section></div>
+<section class="card"><h2>Đề xuất gần nhất</h2><div class="tablewrap"><table><thead><tr><th>Khoảng đích (giả lập)</th><th>Nhà</th><th>Đề xuất</th><th>Lượng (kWh)</th><th>Trạng thái</th><th>Còn để xem xét</th><th>Blockchain local</th></tr></thead><tbody id="proposals"></tbody></table></div><p id="proposalCount" class="muted"></p></section>
+<p id="error" class="error" role="alert"></p>
+<footer>Tự cập nhật mỗi 2 giây. “Đã có số đo” là dữ liệu đối chiếu, không có nghĩa giao dịch đã hoàn tất. Nhà 2 và Nhà 3 hiện chưa có mô hình dự báo riêng. Dữ liệu cũ vẫn được giữ khi khởi động lại backend.</footer>
+</main>
+<script>
+const el=id=>document.getElementById(id), fmt=(x,d=3)=>Number(x).toFixed(d);
+const labels={proposed:'Có thể xem xét',observed:'Đã có số đo',stopped:'Lượt đã dừng',offline:'Simulator ngoại tuyến',paused:'Tạm dừng',error:'Lỗi simulator',stale:'Dữ liệu đã cũ',archived:'Lượt cũ',late:'Dự báo đến trễ',expired:'Đã qua khoảng đích',awaiting_input:'Thiếu số đo đầu vào',invalid_input:'Đầu vào không khớp',disconnected:'Mất kết nối MQTT',below_threshold:'Dưới ngưỡng'};
+function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
+async function refresh(){
+try{
+ const selected=el('run').value;
+ const res=await fetch('/api/overview'+(selected?'?run_id='+encodeURIComponent(selected):''),{cache:'no-store',signal:AbortSignal.timeout(5000)});
+ if(!res.ok)throw Error('Backend trả HTTP '+res.status);
+ const d=await res.json(), online=d.mqtt.connected&&d.mqtt.subscribed&&d.mqtt.storage_ok;
+ el('policyText').textContent='Điện dư dự báo: đề xuất bán '+fmt((1-d.policy.sell_reserve)*100,0)+'%, giữ lại '+fmt(d.policy.sell_reserve*100,0)+'%. Điện thiếu: đề xuất mua phần thiếu. Ngưỡng '+d.policy.minimum_kwh+' kWh mỗi khoảng 5 phút; dưới ngưỡng: giữ nguyên.';
+ el('status').textContent=online?'MQTT đã kết nối':'MQTT / lưu trữ chưa sẵn sàng';el('status').className='badge'+(online?' ok':'');
+ const options=[node('option','Theo dõi lượt mới nhất')];options[0].value='';
+ for(const r of d.runs){const o=node('option',r.run_id.slice(0,12)+' · '+r.telemetry_count+' số đo · '+(labels[r.simulator_status]||r.simulator_status||'chưa rõ'));o.value=r.run_id;options.push(o);}
+ el('run').replaceChildren(...options);el('run').value=selected;
+ el('counter').textContent='Tổng database: '+d.counts.telemetry+' số đo · '+d.counts.predictions+' dự báo · '+d.counts.runs+' lượt. Lượt đang xem: '+(d.selected_run_id||'chưa có');
+ el('homes').replaceChildren(...d.homes.map(h=>{const c=node('section',undefined,'card');c.append(node('h2',h.name+' · '+h.household_id));const t=h.telemetry;
+ if(!t){c.append(node('p','Chưa nhận số đo','muted'));return c;}
+ c.append(node('div',(t.net_power_kw>=0?'+':'')+fmt(t.net_power_kw)+' kW','number'),node('div','Phát '+fmt(t.solar_power_kw)+' · Tải '+fmt(t.load_power_kw)+' kW'),node('p',t.timestamp,'muted'),node('div',h.stale?'Số đo đã cũ': 'Số đo mới nhận','muted'));return c;}));
+ const p=d.predictions.items[0];el('forecast').replaceChildren();if(p){el('forecast').append(node('p','Khoảng đích: '+p.target_timestamp),node('div','Phát '+fmt(p.predicted_solar_kw)+' kW · Tải '+fmt(p.predicted_load_kw)+' kW'),node('p','Suy luận '+fmt(p.inference_us,0)+' µs · '+p.device_id,'muted'),node('div',p.model_version,'muted'));}else el('forecast').textContent='Chưa có dự báo trong lượt này. ESP32 cần đủ 12 số đo liên tục.';
+ el('proposals').replaceChildren(...d.proposals.items.map(p=>{const tr=node('tr');for(const v of [p.target_timestamp,p.household_id,({sell:'Bán',buy:'Mua',hold:'Giữ nguyên'})[p.action],fmt(p.quantity_kwh,6),labels[p.status]||p.status,p.eligible_for_review?'Có':'Không'])tr.append(node('td',v));const cell=node('td');if(p.chain_execution){const x=p.chain_execution,a=node('a',p.on_chain?'Phiên '+x.round_id+' · '+x.mode+' · '+x.trade_count+' khớp':'Chưa xác minh chain hiện tại');a.href='/api/blockchain/rounds/'+encodeURIComponent(x.round_id);a.target='_blank';a.rel='noopener';cell.append(a);}else cell.textContent=p.on_chain===null?'Chưa xác minh':'Chưa có biên lai';tr.append(cell);return tr;}));
+ el('proposalCount').textContent='Hiển thị '+d.proposals.items.length+' / '+d.proposals.total+' đề xuất của lượt đang xem.';
+ el('error').textContent=d.mqtt.last_error?'Thông báo gần nhất: '+d.mqtt.last_error:'';
+}catch(e){el('status').textContent='Không liên lạc được backend';el('status').className='badge';el('error').textContent=e.message+' — kiểm tra terminal backend. Số liệu trên trang có thể đã cũ.';}
+finally{setTimeout(refresh,2000);}}
+refresh();
+</script>
+</html>

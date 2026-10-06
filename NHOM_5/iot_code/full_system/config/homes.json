@@ -1,0 +1,15 @@
+{
+  "config_version": 1,
+  "simulation": {
+    "start": "2026-09-01T12:00:00+07:00",
+    "step_seconds": 300,
+    "publish_interval_seconds": 5,
+    "seed": 42,
+    "weather": "auto"
+  },
+  "homes": [
+    {"id": "home_01", "name": "Nhà 1", "pv_kw": 4.0, "base_load_kw": 0.65, "pv_enabled": true, "load_multiplier": 1.0},
+    {"id": "home_02", "name": "Nhà 2", "pv_kw": 2.5, "base_load_kw": 1.10, "pv_enabled": true, "load_multiplier": 1.0},
+    {"id": "home_03", "name": "Nhà 3", "pv_kw": 0.0, "base_load_kw": 1.00, "pv_enabled": true, "load_multiplier": 1.0}
+  ]
+}
